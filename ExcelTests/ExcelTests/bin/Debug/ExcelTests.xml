@@ -405,6 +405,36 @@
             The Save item info.
             </summary>
         </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Sheet1">
+            <summary>
+            The Sheet1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Sheet1Info">
+            <summary>
+            The Sheet1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SaveAs1">
+            <summary>
+            The SaveAs1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SaveAs1Info">
+            <summary>
+            The SaveAs1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.MsotcidPlaceOpen">
+            <summary>
+            The MsotcidPlaceOpen item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.MsotcidPlaceOpenInfo">
+            <summary>
+            The MsotcidPlaceOpen item info.
+            </summary>
+        </member>
         <member name="T:ExcelTests.CreateExcelWithValueAndFormula">
             <summary>
             Description of ManipulateExcelFile.

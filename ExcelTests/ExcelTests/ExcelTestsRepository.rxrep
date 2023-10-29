@@ -277,10 +277,9 @@ name="ExcelTestsRepository">
 			id="2f744f63-4102-49fd-835b-00df857bebd6"
 			name="Sheet1"
 			refimgid="37b9b3d9-f1f0-42d0-95bd-9ba818182b4b"
-			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='TestFile1.xlsx']/table[@name='Sheet1']"
 			robustPath=""
 			searchtimeout="30000ms">
-				/form[@processname='EXCEL']/?/?/workbook[@name='TestFile1.xlsx']/table[@name='Sheet1']
+				/form[@processname='EXCEL']//table[@name='Sheet1']
 			</item>
 			<item
 			addcaps="listitem,uiautomation,uiautomationscrollitem"

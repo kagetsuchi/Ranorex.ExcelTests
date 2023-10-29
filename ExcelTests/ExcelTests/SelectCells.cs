@@ -90,7 +90,11 @@ namespace ExcelTests
         	
         	foreach (Ranorex.Cell ThisCell in cellList)
             {
-            	string currentCellName = ThisCell.Element.GetAttributeValue("NAME").ToString();
+        		Ranorex.ExcelRange range = new ExcelRange(ThisCell.Element);
+				
+				string currentCellName = range.Address;	    
+        		
+//            	string currentCellName = ThisCell.Element.GetAttributeValue("NAME").ToString();
 
             	if (currentCellName.ToUpper() == cellToFind)
             	{
