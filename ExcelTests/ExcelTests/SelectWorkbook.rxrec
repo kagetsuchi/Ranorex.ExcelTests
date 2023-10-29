@@ -42,9 +42,35 @@ mode="Global">
 		button="Left"
 		duration="300ms"
 		enabled="True"
-		loc="123;8"
+		loc="Center"
 		movetime="300ms"
 		optional="False"
+		searchpropertyid="1d240aa7-1c1a-4a8a-958f-0a62446881a1"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8fb321d0-8115-4b08-913a-aff8d2a3458f"
+			sourcename="RepositoryEditor">
+				<path>
+					/form[@processname='EXCEL']/element/?/?/container//list/listitem
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
+		loc="123;8"
+		movetime="300ms"
+		optional="True"
 		searchpropertyid="908338a1-a248-41f2-8409-d8278b3d0223"
 		sx="149"
 		sy="976"
@@ -293,7 +319,7 @@ f3DRlv7hrWEOVETlzDqKblv7hoqyD//Z
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="76;23"
 		movetime="300ms"
 		optional="False"
@@ -646,7 +672,7 @@ Pl6UUUFFqiiigD//2Q==
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="28;1"
 		movetime="300ms"
 		optional="False"
@@ -672,7 +698,7 @@ Pl6UUUFFqiiigD//2Q==
 		action="Click"
 		button="Left"
 		duration="300ms"
-		enabled="True"
+		enabled="False"
 		loc="33;14"
 		movetime="300ms"
 		optional="False"

@@ -81,23 +81,29 @@ namespace ExcelTests
 
             Report.Log(ReportLevel.Info, "User", "Opening Workbook...", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.OpenOtherWorkbooks' at 123;8.", repo.Book1Excel.OpenOtherWorkbooksInfo, new RecordItemIndex(1));
-            repo.Book1Excel.OpenOtherWorkbooks.Click("123;8");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SomeListItem' at Center.", repo.Book1Excel.SomeListItemInfo, new RecordItemIndex(1));
+            repo.Book1Excel.SomeListItem.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.Browse' at 76;23.", repo.Book1Excel.BrowseInfo, new RecordItemIndex(2));
-            repo.Book1Excel.Browse.Click("76;23");
-            Delay.Milliseconds(0);
+            try {
+                //Report.Log(ReportLevel.Info, "Mouse", "(Optional Action)\r\nMouse Left Click item 'Book1Excel.OpenOtherWorkbooks' at 123;8.", repo.Book1Excel.OpenOtherWorkbooksInfo, new RecordItemIndex(2));
+                //repo.Book1Excel.OpenOtherWorkbooks.Click("123;8");
+                //Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SystemItemNameDisplay' at 28;1.", repo.Book1Excel.SystemItemNameDisplayInfo, new RecordItemIndex(3));
-            repo.Book1Excel.SystemItemNameDisplay.Click("28;1");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.Browse' at 76;23.", repo.Book1Excel.BrowseInfo, new RecordItemIndex(3));
+            //repo.Book1Excel.Browse.Click("76;23");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.ButtonOpen1' at 33;14.", repo.Book1Excel.ButtonOpen1Info, new RecordItemIndex(4));
-            repo.Book1Excel.ButtonOpen1.Click("33;14");
-            Delay.Milliseconds(0);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SystemItemNameDisplay' at 28;1.", repo.Book1Excel.SystemItemNameDisplayInfo, new RecordItemIndex(4));
+            //repo.Book1Excel.SystemItemNameDisplay.Click("28;1");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "User", "Workbook Opened.", new RecordItemIndex(5));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.ButtonOpen1' at 33;14.", repo.Book1Excel.ButtonOpen1Info, new RecordItemIndex(5));
+            //repo.Book1Excel.ButtonOpen1.Click("33;14");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "User", "Workbook Opened.", new RecordItemIndex(6));
             
         }
 

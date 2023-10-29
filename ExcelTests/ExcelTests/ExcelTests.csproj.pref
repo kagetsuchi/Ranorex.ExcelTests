@@ -1,13 +1,13 @@
 ﻿<Properties>
   <Array name="active">
-    <Element value="ExcelTests.rxtst" />
+    <Element value="SelectCells.cs" />
   </Array>
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="CaptureFormulaCell.cs" />
-    <Element value="Program.cs" />
-    <Element value="CreateWorkbookWithValuesAndFormula.cs" />
+    <Element value="SelectCells.cs" />
     <Element value="ExcelTests.rxtst" />
+    <Element value="SelectWorkbook.rxrec" />
+    <Element value="ExcelTestsRepository.rxrep" />
   </Array>
   <Properties name="projectSavedData">
     <Properties name="customTool">

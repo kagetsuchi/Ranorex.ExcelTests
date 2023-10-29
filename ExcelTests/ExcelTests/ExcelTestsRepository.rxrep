@@ -271,6 +271,39 @@ name="ExcelTestsRepository">
 			searchtimeout="30000ms">
 				/form[@processname='EXCEL']/?/?/form[@name='Microsoft Excel']/button[@name='Save']
 			</item>
+			<item
+			addcaps="table,excelworksheet"
+			capname="table"
+			id="2f744f63-4102-49fd-835b-00df857bebd6"
+			name="Sheet1"
+			refimgid="37b9b3d9-f1f0-42d0-95bd-9ba818182b4b"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='TestFile1.xlsx']/table[@name='Sheet1']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/workbook[@name='TestFile1.xlsx']/table[@name='Sheet1']
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationscrollitem"
+			capname="listitem"
+			id="7978ed41-6e5e-4bac-b343-686f7c6e10a7"
+			name="SaveAs1"
+			refimgid="7bd13d13-6a30-4166-a887-a0e598cce7e4"
+			refpath="/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@name='Save As']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@name='Save As']
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationscrollitem"
+			capname="listitem"
+			id="35be5c8c-d674-4685-ae04-00d60c247e89"
+			name="MsotcidPlaceOpen"
+			refimgid="4b12aead-88fb-41a9-98c2-7e5c9a840401"
+			refpath="/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@automationid='msotcidPlaceOpen']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@automationid='msotcidPlaceOpen']
+			</item>
 			<basepath>
 				/form[@processname='EXCEL']
 			</basepath>

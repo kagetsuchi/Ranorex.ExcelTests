@@ -76,7 +76,10 @@ namespace ExcelTests
             {
             
             	//get table of the opened excel file.
-            	Table tableList = apps.FindSingle<Ranorex.Table>("//tabpagelist[@automationid='"+filename+".xlsx']/tabpage[@automationid='Sheet1']/table[@automationid='Grid']");
+            	
+            	Ranorex.Table tableList = apps.FindDescendant<Ranorex.Table>();
+            	
+            	//Table tableList = apps.FindSingle<Ranorex.Table>("//tabpagelist[@automationid='"+filename+".xlsx']/tabpage[@automationid='Sheet1']/table[@automationid='Grid']");
             	
             	if (tableList != null)
             	{
@@ -232,7 +235,11 @@ namespace ExcelTests
         	
         	foreach (Ranorex.Cell ThisCell in cellList)
             {
-            	string currentCellName = ThisCell.Element.GetAttributeValue("NAME").ToString();
+        		Ranorex.ExcelRange range = new ExcelRange(ThisCell.Element);
+				
+				string currentCellName = range.Address;	    		
+        		
+            	//string currentCellName = ThisCell.Element.GetAttributeValue("NAME").ToString();
 				
             	if (currentCellName.ToUpper() == cellToFind)
             	{

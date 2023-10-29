@@ -592,6 +592,106 @@ cqDk+tNNvAXZzDGWYYLbRkipaKACiiigD//Z
 		button="Left"
 		duration="300ms"
 		enabled="True"
+		loc="Center"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ca8e2711-839a-4404-8b16-0b6a57540849"
+		sx="0"
+		sy="0"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7978ed41-6e5e-4bac-b343-686f7c6e10a7"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="uiautomation, uiautomationscrollitem"
+				dontcache="False"
+				enabled="True"
+				flavor="uia"
+				hasfocus="False"
+				index="7"
+				prefcap="listitem"
+				rect="775,682,175,50"
+				role="listitem"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						Save As
+					</attribute>
+					<attribute
+					name="accesskey"
+					type="System.String">
+						Alt, F, A
+					</attribute>
+					<attribute
+					name="classname"
+					type="System.String">
+						NetUIRibbonTab
+					</attribute>
+					<attribute
+					name="controltype"
+					type="System.String">
+						ListItem
+					</attribute>
+					<attribute
+					name="frameworkid"
+					type="System.String">
+						Win32
+					</attribute>
+					<attribute
+					name="iscontentelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iscontrolelement"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="iskeyboardfocusable"
+					type="System.Boolean">
+						True
+					</attribute>
+					<attribute
+					name="localizedcontroltype"
+					type="System.String">
+						List Item
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						Save As
+					</attribute>
+					<attribute
+					name="processid"
+					type="System.Int32">
+						17156
+					</attribute>
+				</element>
+				<path>
+					/form[@processname='EXCEL']//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@name='Save As']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="300ms"
+		enabled="False"
 		loc="94;29"
 		movetime="300ms"
 		optional="False"

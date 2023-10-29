@@ -87,15 +87,19 @@ namespace ExcelTests
             repo.Book1Excel.FileTabButton.Click("32;14");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SaveAs' at 94;29.", repo.Book1Excel.SaveAsInfo, new RecordItemIndex(2));
-            repo.Book1Excel.SaveAs.Click("94;29");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SaveAs1' at Center.", repo.Book1Excel.SaveAs1Info, new RecordItemIndex(2));
+            repo.Book1Excel.SaveAs1.Click();
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.Browse1' at 104;12.", repo.Book1Excel.Browse1Info, new RecordItemIndex(3));
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.SaveAs' at 94;29.", repo.Book1Excel.SaveAsInfo, new RecordItemIndex(3));
+            //repo.Book1Excel.SaveAs.Click("94;29");
+            //Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Book1Excel.Browse1' at 104;12.", repo.Book1Excel.Browse1Info, new RecordItemIndex(4));
             repo.Book1Excel.Browse1.Click("104;12");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ButtonSave' at 16;18.", repo.ButtonSaveInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'ButtonSave' at 16;18.", repo.ButtonSaveInfo, new RecordItemIndex(5));
             repo.ButtonSave.Click("16;18");
             Delay.Milliseconds(0);
             

@@ -79,6 +79,10 @@ namespace ExcelTests
 
             Init();
 
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Book1Excel.Sheet1'.", repo.Book1Excel.Sheet1Info, new RecordItemIndex(0));
+            Validate.Exists(repo.Book1Excel.Sheet1Info);
+            Delay.Milliseconds(100);
+            
         }
 
 #region Image Feature Data

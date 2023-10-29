@@ -70,14 +70,12 @@ namespace ExcelTests
             
             Report.Info("Cell to Navigate: " +_cellToNavigate);
             
-            var repo = ExcelTestsRepository.Instance;
+         	var repo = ExcelTestsRepository.Instance;
             
-            Table cellList = repo.Book1Excel.CellList;
-            
-            IList<Ranorex.Cell> AllCells = cellList.FindDescendants<Ranorex.Cell>();
-            
-            CellNavigate(AllCells, _cellToFind, _cellToNavigate);
-            
+	         Table cellList = repo.Book1Excel.Sheet1;
+	         IList<Ranorex.Cell> AllCells = cellList.FindDescendants<Ranorex.Cell>();
+             CellNavigate(AllCells, _cellToFind, _cellToNavigate);
+	
             Report.Info("END CODE");
             
            

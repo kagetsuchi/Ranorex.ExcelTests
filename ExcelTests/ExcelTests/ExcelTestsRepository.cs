@@ -160,6 +160,9 @@ namespace ExcelTests
             RepoItemInfo _cella6Info;
             RepoItemInfo _closeInfo;
             RepoItemInfo _saveInfo;
+            RepoItemInfo _sheet1Info;
+            RepoItemInfo _saveas1Info;
+            RepoItemInfo _msotcidplaceopenInfo;
 
             /// <summary>
             /// Creates a new Book1Excel  folder.
@@ -190,6 +193,9 @@ namespace ExcelTests
                 _cella6Info = new RepoItemInfo(this, "CellA6", ".//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']", ".//cell[@address='A6']", 30000, null, "b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26");
                 _closeInfo = new RepoItemInfo(this, "Close", "element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Close']", ".//button[@name='Close']", 30000, null, "c2239afe-689c-4f1d-a8b9-32c1a74b7526");
                 _saveInfo = new RepoItemInfo(this, "Save", "?/?/form[@name='Microsoft Excel']/button[@name='Save']", ".//button[@name='Save']", 30000, null, "7dc0fe92-f0a2-4cee-8aa8-0e8d48a8961c");
+                _sheet1Info = new RepoItemInfo(this, "Sheet1", "?/?/workbook[@name='TestFile1.xlsx']/table[@name='Sheet1']", "", 30000, null, "2f744f63-4102-49fd-835b-00df857bebd6");
+                _saveas1Info = new RepoItemInfo(this, "SaveAs1", ".//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@name='Save As']", "", 30000, null, "7978ed41-6e5e-4bac-b343-686f7c6e10a7");
+                _msotcidplaceopenInfo = new RepoItemInfo(this, "MsotcidPlaceOpen", ".//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@automationid='msotcidPlaceOpen']", "", 30000, null, "35be5c8c-d674-4685-ae04-00d60c247e89");
             }
 
             /// <summary>
@@ -765,6 +771,78 @@ namespace ExcelTests
                 get
                 {
                     return _saveInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Sheet1 item.
+            /// </summary>
+            [RepositoryItem("2f744f63-4102-49fd-835b-00df857bebd6")]
+            public virtual Ranorex.Table Sheet1
+            {
+                get
+                {
+                    return _sheet1Info.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Sheet1 item info.
+            /// </summary>
+            [RepositoryItemInfo("2f744f63-4102-49fd-835b-00df857bebd6")]
+            public virtual RepoItemInfo Sheet1Info
+            {
+                get
+                {
+                    return _sheet1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAs1 item.
+            /// </summary>
+            [RepositoryItem("7978ed41-6e5e-4bac-b343-686f7c6e10a7")]
+            public virtual Ranorex.ListItem SaveAs1
+            {
+                get
+                {
+                    return _saveas1Info.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAs1 item info.
+            /// </summary>
+            [RepositoryItemInfo("7978ed41-6e5e-4bac-b343-686f7c6e10a7")]
+            public virtual RepoItemInfo SaveAs1Info
+            {
+                get
+                {
+                    return _saveas1Info;
+                }
+            }
+
+            /// <summary>
+            /// The MsotcidPlaceOpen item.
+            /// </summary>
+            [RepositoryItem("35be5c8c-d674-4685-ae04-00d60c247e89")]
+            public virtual Ranorex.ListItem MsotcidPlaceOpen
+            {
+                get
+                {
+                    return _msotcidplaceopenInfo.CreateAdapter<Ranorex.ListItem>(true);
+                }
+            }
+
+            /// <summary>
+            /// The MsotcidPlaceOpen item info.
+            /// </summary>
+            [RepositoryItemInfo("35be5c8c-d674-4685-ae04-00d60c247e89")]
+            public virtual RepoItemInfo MsotcidPlaceOpenInfo
+            {
+                get
+                {
+                    return _msotcidplaceopenInfo;
                 }
             }
         }
