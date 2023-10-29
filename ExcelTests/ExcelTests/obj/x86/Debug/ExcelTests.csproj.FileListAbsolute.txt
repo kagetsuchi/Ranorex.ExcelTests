@@ -1,0 +1,20 @@
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.AssemblyReference.cache
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.CoreCompileInputs.cache
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.rxtmg
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.rxtst
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.exe.config
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.xml
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.exe
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.pdb
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex.Core.Resolver.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex.ReportToPDF.exe
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\office.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.pdb
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.xml
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\bin\Debug\office.xml
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.CopyComplete
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.exe
+E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.pdb

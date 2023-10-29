@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{88A0B281-4812-4AC8-813A-2B7FB55D1D15}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExcelTests</RootNamespace>
+    <AssemblyName>ExcelTests</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>6f3514f0-9b18-44f0-9709-efbfd14cad18</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>353edd2f-3294-48d5-afa3-e8094bcbc5d4</id>
+    </Compile>
+    <Compile Include="CaptureFormulaCell.cs">
+      <id>5083ecb5-4587-407d-87c7-178193b92c94</id>
+    </Compile>
+    <Compile Include="CloseAUT.cs">
+      <BoundTo>666fe1e7-4ba9-427b-9f68-d2b158bb6c13</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>99f5d157-b0c5-4396-9f50-12d8125b25d4</id>
+    </Compile>
+    <Compile Include="CloseAUT.UserCode.cs">
+      <BoundTo>666fe1e7-4ba9-427b-9f68-d2b158bb6c13</BoundTo>
+      <DependentUpon>CloseAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0c832e48-1941-46b7-b4f4-eb9fd5122e0a</id>
+    </Compile>
+    <Compile Include="CreateWorkbook.cs">
+      <BoundTo>ff127868-b8a5-4e88-a3d6-939a973f05eb</BoundTo>
+      <DependentUpon>CreateWorkbook.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4e2d9498-704d-46e1-b6e3-fbf5a8086ec5</id>
+    </Compile>
+    <Compile Include="CreateWorkbook.UserCode.cs">
+      <BoundTo>ff127868-b8a5-4e88-a3d6-939a973f05eb</BoundTo>
+      <DependentUpon>CreateWorkbook.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8397fe5a-9753-44a3-bea2-f4cc49ef5881</id>
+    </Compile>
+    <Compile Include="ExcelTestsRepository.cs">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <DependentUpon>ExcelTestsRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>fa4325bf-9ff0-424e-b806-d594da7999d1</id>
+    </Compile>
+    <Compile Include="CreateWorkbookWithValuesAndFormula.cs">
+      <id>e47de5d7-ecfe-4f63-9ec8-0535552d79d7</id>
+    </Compile>
+    <Compile Include="Failed.cs">
+      <BoundTo>9228372e-39d1-44c9-bb4e-dd12e795bd21</BoundTo>
+      <DependentUpon>Failed.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b68729b9-a8cf-465d-99d5-df8944cb405a</id>
+    </Compile>
+    <Compile Include="Failed.UserCode.cs">
+      <BoundTo>9228372e-39d1-44c9-bb4e-dd12e795bd21</BoundTo>
+      <DependentUpon>Failed.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9638125a-53fd-4883-8265-f6cc46041a8f</id>
+    </Compile>
+    <Compile Include="ModifyCell.cs">
+      <BoundTo>8cdc7bc4-bc26-4d00-bc2b-6954e9194a13</BoundTo>
+      <DependentUpon>ModifyCell.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>415f97ea-b394-4152-aeb0-767713923b1f</id>
+    </Compile>
+    <Compile Include="ModifyCell.UserCode.cs">
+      <BoundTo>8cdc7bc4-bc26-4d00-bc2b-6954e9194a13</BoundTo>
+      <DependentUpon>ModifyCell.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5cce4e8f-3403-4693-942d-727e69f86b35</id>
+    </Compile>
+    <Compile Include="ModifyFormula.cs">
+      <BoundTo>f5e8a13b-c524-41cc-b9fa-35ffb4539ce2</BoundTo>
+      <DependentUpon>ModifyFormula.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6f76533-17a8-47c9-8f91-d30401078069</id>
+    </Compile>
+    <Compile Include="ModifyFormula.UserCode.cs">
+      <BoundTo>f5e8a13b-c524-41cc-b9fa-35ffb4539ce2</BoundTo>
+      <DependentUpon>ModifyFormula.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f93d6c37-fe99-4fa8-aa07-d5a174320736</id>
+    </Compile>
+    <Compile Include="SaveWhenClosing.cs">
+      <BoundTo>36c3478f-3d39-4c41-86ee-37bf3925e585</BoundTo>
+      <DependentUpon>SaveWhenClosing.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>836eb9ce-e632-4bd2-bdf1-f1737989a053</id>
+    </Compile>
+    <Compile Include="SaveWhenClosing.UserCode.cs">
+      <BoundTo>36c3478f-3d39-4c41-86ee-37bf3925e585</BoundTo>
+      <DependentUpon>SaveWhenClosing.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>449f43f6-bdda-4007-8cba-26909eabc546</id>
+    </Compile>
+    <Compile Include="SelectCells.cs">
+      <id>a83e6d12-97ef-4c33-b7fe-d84b513dc562</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>9b60ca06-c146-4885-b43e-3f99e3027913</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>ca7bff04-7a9a-4b8e-9a45-2bbf67300083</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2ccdca65-b974-4524-b2f7-eb7935dd337b</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>ca7bff04-7a9a-4b8e-9a45-2bbf67300083</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bb955c44-fd66-4c30-9e3d-2d20e72ae589</id>
+    </Compile>
+    <Compile Include="SelectWorkbook.cs">
+      <BoundTo>a0601298-5bbd-4bb8-8174-5d982a68eb6e</BoundTo>
+      <DependentUpon>SelectWorkbook.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9270aac4-7319-440e-be4a-54e331bcde5e</id>
+    </Compile>
+    <Compile Include="SelectWorkbook.UserCode.cs">
+      <BoundTo>a0601298-5bbd-4bb8-8174-5d982a68eb6e</BoundTo>
+      <DependentUpon>SelectWorkbook.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>572aea63-2e33-4a9a-b2da-afdc439aa79e</id>
+    </Compile>
+    <Compile Include="StartAUT.cs">
+      <BoundTo>9110f633-547c-48d9-9df6-d284627f75a8</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f4a94aaa-74e2-4b38-8639-6c8b463a4a1d</id>
+    </Compile>
+    <Compile Include="StartAUT.UserCode.cs">
+      <BoundTo>9110f633-547c-48d9-9df6-d284627f75a8</BoundTo>
+      <DependentUpon>StartAUT.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>350c8f0c-eee1-4217-8ab2-6fb00c0e1b1d</id>
+    </Compile>
+    <Compile Include="MatchExpectedValue.cs">
+      <BoundTo>d0a9fcb6-928a-4ee2-a89a-3efb1ad793a9</BoundTo>
+      <DependentUpon>MatchExpectedValue.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d6c1f154-fd5e-4339-b2b9-ec3c43b2af90</id>
+    </Compile>
+    <Compile Include="MatchExpectedValue.UserCode.cs">
+      <BoundTo>d0a9fcb6-928a-4ee2-a89a-3efb1ad793a9</BoundTo>
+      <DependentUpon>MatchExpectedValue.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0dd99770-cf26-4e13-ac53-9c8d80e81ffb</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>4860818b-0df4-435d-9be3-8a2a2c11608b</id>
+    </None>
+    <None Include="CloseAUT.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>666fe1e7-4ba9-427b-9f68-d2b158bb6c13</id>
+      <recordtableid>fbeeb6f8-e9fc-452c-aebf-00130a7c4c50</recordtableid>
+    </None>
+    <None Include="CreateWorkbook.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>ff127868-b8a5-4e88-a3d6-939a973f05eb</id>
+      <recordtableid>d1458472-36e9-4632-aa10-b28b621b9138</recordtableid>
+    </None>
+    <None Include="ExcelTestsRepository.rximg">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <DependentUpon>ExcelTestsRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>12dfa5e5-2506-4da5-8c72-8cbba2d38fbc</id>
+    </None>
+    <None Include="ExcelTestsRepository.rxrep">
+      <id>6f3514f0-9b18-44f0-9709-efbfd14cad18</id>
+      <repoid>6a19bbd1-04ac-46b4-babd-6b132ec297cb</repoid>
+      <reporootid>e2534433-f71e-44ec-a31d-ab40ab716087</reporootid>
+    </None>
+    <None Include="Failed.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>9228372e-39d1-44c9-bb4e-dd12e795bd21</id>
+      <recordtableid>103e23a1-1886-419b-914f-69daf2c15756</recordtableid>
+    </None>
+    <None Include="ModifyCell.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>8cdc7bc4-bc26-4d00-bc2b-6954e9194a13</id>
+      <recordtableid>a7bc4995-33fa-42be-aaac-0fb1c3f710ec</recordtableid>
+    </None>
+    <None Include="ModifyFormula.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>f5e8a13b-c524-41cc-b9fa-35ffb4539ce2</id>
+      <recordtableid>6f7ee883-347a-4df1-b5be-325ee336011c</recordtableid>
+    </None>
+    <None Include="packages.config">
+      <id>fe66251f-25f6-479a-9e6f-c033f0cd25e2</id>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>ca7bff04-7a9a-4b8e-9a45-2bbf67300083</id>
+      <recordtableid>556b630a-7c6a-4ebc-923b-5f5186a0fdc6</recordtableid>
+    </None>
+    <None Include="SaveWhenClosing.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>36c3478f-3d39-4c41-86ee-37bf3925e585</id>
+      <recordtableid>7a336b3e-089b-4130-b4d4-a9dab001691a</recordtableid>
+    </None>
+    <None Include="SelectWorkbook.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>a0601298-5bbd-4bb8-8174-5d982a68eb6e</id>
+      <recordtableid>e337fc52-855a-473a-9445-dee733c1f814</recordtableid>
+    </None>
+    <None Include="StartAUT.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>9110f633-547c-48d9-9df6-d284627f75a8</id>
+      <recordtableid>be525506-317f-4be5-8f86-f3803e1f30f2</recordtableid>
+    </None>
+    <None Include="MatchExpectedValue.rxrec">
+      <BoundTo>6f3514f0-9b18-44f0-9709-efbfd14cad18</BoundTo>
+      <id>d0a9fcb6-928a-4ee2-a89a-3efb1ad793a9</id>
+      <recordtableid>4c325e52-d201-46ec-a935-68c0bef0a6af</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExcelTests.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1820f642-e767-4c40-9ed1-1f83d74f8924</id>
+    </Content>
+    <Content Include="ExcelTests.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>607cfef1-c5a2-422f-931d-338129658c4e</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RanorexAutomationHelpers\Ranorex Automation Helpers.csproj">
+      <Project>{329EED4A-A8F8-4B4F-BFBC-4ED5F8B202FE}</Project>
+      <Name>Ranorex Automation Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

@@ -1,0 +1,10 @@
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.xml
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\bin\Debug\Ranorex Automation Helpers.pdb
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\bin\Debug\Ranorex.Core.Resolver.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\bin\Debug\Ranorex.ReportToPDF.exe
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.AssemblyReference.cache
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.CoreCompileInputs.cache
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.csproj.CopyComplete
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.dll
+E:\Ranorex Tests\Excel Tests\ExcelTests\RanorexAutomationHelpers\obj\x86\Debug\Ranorex Automation Helpers.pdb

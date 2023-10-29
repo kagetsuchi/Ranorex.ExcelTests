@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ExcelTests</name>
+    </assembly>
+    <members>
+        <member name="T:ExcelTests.CaptureFormulaCell">
+            <summary>
+            Description of CaptureFormulaCell.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CaptureFormulaCell.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CaptureFormulaCell.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:ExcelTests.CloseAUT">
+             <summary>
+            The CloseAUT recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.CloseAUT.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CloseAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.CloseAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.CloseAUT.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CloseAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.CloseAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CloseAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.CloseAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.CreateWorkbook">
+             <summary>
+            The CreateWorkbook recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.CreateWorkbook.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CreateWorkbook.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.CreateWorkbook.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CreateWorkbook.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.CreateWorkbook.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CreateWorkbook.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.CreateWorkbook.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.ExcelTestsRepository">
+            <summary>
+            The class representing the ExcelTestsRepository element repository.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.Instance">
+            <summary>
+            Gets the singleton class instance representing the ExcelTestsRepository element repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ExcelTestsRepository.#ctor">
+            <summary>
+            Repository class constructor.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.Maximize">
+            <summary>
+            The Maximize item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.MaximizeInfo">
+            <summary>
+            The Maximize item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.ButtonSave">
+            <summary>
+            The ButtonSave item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.ButtonSaveInfo">
+            <summary>
+            The ButtonSave item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepository.Book1Excel">
+            <summary>
+            The Book1Excel folder.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.ExcelTestsRepositoryFolders">
+            <summary>
+            Inner folder classes.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder">
+            <summary>
+            The Book1ExcelAppFolder folder.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.#ctor(Ranorex.Core.Repository.RepoGenBaseFolder)">
+            <summary>
+            Creates a new Book1Excel  folder.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Self">
+            <summary>
+            The Self item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SelfInfo">
+            <summary>
+            The Self item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.RestoreDown">
+            <summary>
+            The RestoreDown item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.RestoreDownInfo">
+            <summary>
+            The RestoreDown item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Text1001">
+            <summary>
+            The Text1001 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Text1001Info">
+            <summary>
+            The Text1001 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.FileTabButton">
+            <summary>
+            The FileTabButton item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.FileTabButtonInfo">
+            <summary>
+            The FileTabButton item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SomeListItem">
+            <summary>
+            The SomeListItem item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SomeListItemInfo">
+            <summary>
+            The SomeListItem item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.AIOStartDocument1">
+            <summary>
+            The AIOStartDocument1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.AIOStartDocument1Info">
+            <summary>
+            The AIOStartDocument1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.OpenOtherWorkbooks">
+            <summary>
+            The OpenOtherWorkbooks item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.OpenOtherWorkbooksInfo">
+            <summary>
+            The OpenOtherWorkbooks item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Browse">
+            <summary>
+            The Browse item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.BrowseInfo">
+            <summary>
+            The Browse item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.LinkedCell">
+            <summary>
+            The LinkedCell item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.LinkedCellInfo">
+            <summary>
+            The LinkedCell item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.NetUIAnchor">
+            <summary>
+            The NetUIAnchor item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.NetUIAnchorInfo">
+            <summary>
+            The NetUIAnchor item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCEL">
+            <summary>
+            The EXCEL item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCELInfo">
+            <summary>
+            The EXCEL item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellList">
+            <summary>
+            The CellList item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellListInfo">
+            <summary>
+            The CellList item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellC2">
+            <summary>
+            The CellC2 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellC2Info">
+            <summary>
+            The CellC2 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCEL6">
+            <summary>
+            The EXCEL6 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCEL6Info">
+            <summary>
+            The EXCEL6 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SystemItemNameDisplay">
+            <summary>
+            The SystemItemNameDisplay item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SystemItemNameDisplayInfo">
+            <summary>
+            The SystemItemNameDisplay item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.ButtonOpen">
+            <summary>
+            The ButtonOpen item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.ButtonOpenInfo">
+            <summary>
+            The ButtonOpen item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SaveAs">
+            <summary>
+            The SaveAs item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SaveAsInfo">
+            <summary>
+            The SaveAs item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Browse1">
+            <summary>
+            The Browse1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Browse1Info">
+            <summary>
+            The Browse1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.ButtonOpen1">
+            <summary>
+            The ButtonOpen1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.ButtonOpen1Info">
+            <summary>
+            The ButtonOpen1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCEL1">
+            <summary>
+            The EXCEL1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.EXCEL1Info">
+            <summary>
+            The EXCEL1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellA1">
+            <summary>
+            The CellA1 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellA1Info">
+            <summary>
+            The CellA1 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellA6">
+            <summary>
+            The CellA6 item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CellA6Info">
+            <summary>
+            The CellA6 item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Close">
+            <summary>
+            The Close item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.CloseInfo">
+            <summary>
+            The Close item info.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.Save">
+            <summary>
+            The Save item.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ExcelTestsRepositoryFolders.Book1ExcelAppFolder.SaveInfo">
+            <summary>
+            The Save item info.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.CreateExcelWithValueAndFormula">
+            <summary>
+            Description of ManipulateExcelFile.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CreateExcelWithValueAndFormula.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.CreateExcelWithValueAndFormula.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:ExcelTests.Failed">
+             <summary>
+            The Failed recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.Failed.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Failed.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.Failed.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Failed.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.Failed.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Failed.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.Failed.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.ModifyCell">
+             <summary>
+            The ModifyCell recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.ModifyCell.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyCell.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ModifyCell.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ModifyCell.ModifiedCellValue">
+            <summary>
+            Gets or sets the value of variable ModifiedCellValue.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyCell.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.ModifyCell.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyCell.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.ModifyCell.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.ModifyFormula">
+             <summary>
+            The ModifyFormula recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.ModifyFormula.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyFormula.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ModifyFormula.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.ModifyFormula.NewFormula">
+            <summary>
+            Gets or sets the value of variable NewFormula.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyFormula.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.ModifyFormula.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.ModifyFormula.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.ModifyFormula.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.SaveWhenClosing">
+             <summary>
+            The SaveWhenClosing recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.SaveWhenClosing.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SaveWhenClosing.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.SaveWhenClosing.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.SaveWhenClosing.CloseAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable CloseAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SaveWhenClosing.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.SaveWhenClosing.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SaveWhenClosing.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.SaveWhenClosing.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.SelectCells">
+            <summary>
+            Description of ManipulateCell.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SelectCells.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SelectCells.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this module.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="T:ExcelTests.Recording1">
+             <summary>
+            The Recording1 recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.Recording1.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Recording1.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.Recording1.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Recording1.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.Recording1.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.Recording1.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.Recording1.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.SelectWorkbook">
+             <summary>
+            The SelectWorkbook recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.SelectWorkbook.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SelectWorkbook.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.SelectWorkbook.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SelectWorkbook.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.SelectWorkbook.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.SelectWorkbook.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.SelectWorkbook.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.StartAUT">
+             <summary>
+            The StartAUT recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.StartAUT.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.StartAUT.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.StartAUT.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.StartAUT.StartAutProcessIDVar">
+            <summary>
+            Gets or sets the value of variable StartAutProcessIDVar.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.StartAUT.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.StartAUT.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.StartAUT.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.StartAUT.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:ExcelTests.MatchExpectedValue">
+             <summary>
+            The MatchExpectedValue recording.
+             </summary>
+        </member>
+        <member name="F:ExcelTests.MatchExpectedValue.repo">
+            <summary>
+            Holds an instance of the ExcelTestsRepository repository.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.MatchExpectedValue.#ctor">
+            <summary>
+            Constructs a new instance.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.MatchExpectedValue.Instance">
+            <summary>
+            Gets a static instance of this recording.
+            </summary>
+        </member>
+        <member name="P:ExcelTests.MatchExpectedValue.NewComputedValue">
+            <summary>
+            Gets or sets the value of variable NewComputedValue.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.MatchExpectedValue.Start">
+            <summary>
+            Starts the replay of the static recording <see cref="P:ExcelTests.MatchExpectedValue.Instance"/>.
+            </summary>
+        </member>
+        <member name="M:ExcelTests.MatchExpectedValue.Ranorex#Core#Testing#ITestModule#Run">
+            <summary>
+            Performs the playback of actions in this recording.
+            </summary>
+            <remarks>You should not call this method directly, instead pass the module
+            instance to the <see cref="M:Ranorex.Core.Testing.TestModuleRunner.Run(Ranorex.Core.Testing.ITestModule)"/> method
+            that will in turn invoke this method.</remarks>
+        </member>
+        <member name="M:ExcelTests.MatchExpectedValue.Init">
+            <summary>
+            This method gets called right after the recording has been started.
+            It can be used to execute recording specific initialization code.
+            </summary>
+        </member>
+        <member name="T:__RxMain.__RxProgram">
+            <summary>
+            Modified Program class that ensures that the Ranorex System gets initialized and cleaned up
+            correctly. This file is auto-generated during project build. This class will invoke the
+            original 'Main' method implementation as needed.
+            </summary>
+        </member>
+        <member name="M:__RxMain.__RxProgram.Main(System.String[])">
+            <summary>
+            The entry point of the application.
+            </summary>
+            <param name="args">Contains any number of command line arguments.</param>
+            <returns>The return value of the projects original 'Main' implementation.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="556b630a-7c6a-4ebc-923b-5f5186a0fdc6"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording1"
+	namespace="ExcelTests">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+	</recorditems>
+	<repository
+	id="6a19bbd1-04ac-46b4-babd-6b132ec297cb"
+	name="ExcelTestsRepository"
+	relativepath="ExcelTestsRepository.rxrep">
+		<codegen
+		classname="ExcelTestsRepository"
+		namespace="ExcelTests">
+		</codegen>
+		<rootfolder
+		id="e2534433-f71e-44ec-a31d-ab40ab716087"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording1.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

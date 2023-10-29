@@ -1,0 +1,315 @@
+﻿<repository
+id="6a19bbd1-04ac-46b4-babd-6b132ec297cb"
+name="ExcelTestsRepository">
+	<codegen
+	classname="ExcelTestsRepository"
+	namespace="ExcelTests">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="e2534433-f71e-44ec-a31d-ab40ab716087"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,nativewindow"
+		capname="form"
+		id="e22d9a7c-9790-46a6-aa66-eae57fc6476e"
+		isrooted="True"
+		name="Book1Excel"
+		refimgid="914102f8-71f3-4c92-b8e0-465cbe2b4080"
+		refpath="/form[@processname='EXCEL']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="32927ec0-74ec-4c39-bd44-01880707f18c"
+			name="RestoreDown"
+			refimgid="19f306a4-2793-46bd-9882-d41c1b97132a"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/button[@name='Maximize']"
+			robustPath="/form[@processname='EXCEL']//button[2]"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Maximize']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="38a1e864-b298-42e4-905b-dffc43f4eac2"
+			name="Text1001"
+			refimgid="898f04c6-de1c-47a6-95e2-c7ba06d03a7d"
+			refpath="/form[@title='Save As']/element[@class='DUIViewWndClassName']/container[@class='DirectUIHWND']/element[@class='FloatNotifySink' and @instance='0']/combobox[@class='ComboBox']/text[@controlid='1001']"
+			robustPath="/form[@processname='EXCEL']//text[@controlid='1001']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/container[@class='DirectUIHWND']/element[1]/combobox[@class='ComboBox']/text[@controlid='1001']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="048c3ea2-a0e0-414a-826e-66d9172e0133"
+			name="FileTabButton"
+			refimgid="b20e3a7e-0cf6-49ac-9c7a-991d7b40dda3"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container/element/element/container[@class='NetUIHWND']/container[@name='Ribbon']/button[@automationid='FileTabButton']"
+			robustPath="/form[@processname='EXCEL']//button[@automationid='FileTabButton']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@automationid='FileTabButton']
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+			capname="listitem"
+			id="8fb321d0-8115-4b08-913a-aff8d2a3458f"
+			name="SomeListItem"
+			refimgid="9cc4b1b2-1116-4524-adc0-d24a3883b9ac"
+			refpath="/form[@processname='EXCEL']/element/container/container/container/container/list/listitem"
+			robustPath="/form[@processname='EXCEL']//container/container/container/list/listitem"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element/?/?/container//list/listitem
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+			capname="listitem"
+			id="6c62ffb0-02bc-454d-9a36-029e541aed5f"
+			name="AIOStartDocument1"
+			refimgid="2c59678b-d621-4144-bd5e-c157a5618b5b"
+			refpath="/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container/container/container/container/list/listitem"
+			robustPath="/form[@processname='EXCEL']//container[@automationid='BackstageView']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='BackstageView']//list/listitem
+			</item>
+			<item
+			addcaps="link,uiautomation,uiautomationinvoke,uiautomationscrollitem,uiautomationvalue"
+			capname="link"
+			id="f6c50d54-2fee-4baf-a14d-0b70c7b59a62"
+			name="OpenOtherWorkbooks"
+			refimgid="17cd4f1c-8109-43a6-8ff9-748243631a5c"
+			refpath="/form[@processname='EXCEL' and @class='XLMAIN' and @instance='0']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container/container/container[@name='Recent']/link[@name='Open Other Workbooks']"
+			robustPath="/form[@processname='EXCEL']//container[@automationid='BackstageView']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='BackstageView']/container[@name='New']/?/?/container[@name='Recent']/link[@name='Open Other Workbooks']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+			capname="button"
+			id="98273c1d-fb1b-439c-bca5-6876f6efecbf"
+			name="Browse"
+			refimgid="a7d6e2fd-7887-4175-916c-00884d93a31a"
+			refpath="/form[@processname='EXCEL']/element/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container/container[@name='Open']/container/contextmenu/container/button[@name='Browse']"
+			robustPath="/form[@processname='EXCEL']//button[@name='Browse']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='BackstageView']/container[@name='Open']/container[@name='Open']/?/?/contextmenu[@name='Open']/?/?/button[@name='Browse']
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+			capname="listitem"
+			id="e0358cf4-0cee-47d2-a470-376cf6b01d48"
+			name="LinkedCell"
+			refimgid="c74795b7-66cd-4c3c-8143-05b496fbd677"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Home']/container[@name='Styles']/container[@name='Cell Styles']/menuitem[@classname='NetUIAnchor']/container[@name='Cell Styles']/table[@name='Cell Styles']/listitem[@name='Linked Cell']"
+			robustPath="/form[@processname='EXCEL']//listitem[@name='Linked Cell']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@name='Ribbon']/container[@name='Lower Ribbon']/?/?/container[@name='Styles']/container[@name='Cell Styles']/?/?/container[@name='Cell Styles']/table[@name='Cell Styles']/listitem[@name='Linked Cell']
+			</item>
+			<item
+			addcaps="menuitem,uiautomation"
+			capname="menuitem"
+			id="99dc032c-1f22-45e4-8870-601a2655e78d"
+			name="NetUIAnchor"
+			refimgid="bdc368cf-b724-4e59-bfd1-38272b6486af"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container[@caption='Ribbon']/element[@class='MsoWorkPane']/element[@class='NUIPane']/container[@class='NetUIHWND']/container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Home']/container[@name='Styles']/container[@name='Cell Styles']/menuitem[@classname='NetUIAnchor']"
+			robustPath="/form[@processname='EXCEL']//menuitem[@helptext>'A colorful style is a great']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@name='Ribbon']/container[@name='Lower Ribbon']/container[@name='Home']/container[@name='Styles']/container[@name='Cell Styles']/menuitem[@classname='NetUIAnchor']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="a1b9b200-7b49-404c-9721-971bd2370aee"
+			name="EXCEL"
+			refimgid="e47c2ca4-f3ff-4fa4-8bba-939a2c499c8c"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL;']"
+			robustPath="/form[@processname='EXCEL']/element[@class='EXCEL;']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[@class='EXCEL;']
+			</item>
+			<item
+			capname="table"
+			id="c117cf30-ff9d-4aa3-b5ea-765892a8eb44"
+			name="CellList"
+			robustPath="/form[@processname='EXCEL']/element"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//tabpagelist[@automationid='Book1.xlsx']/tabpage[@automationid='Sheet1']/table[@automationid='Grid']
+			</item>
+			<item
+			addcaps="cell,uiautomation,uiautomationvalue"
+			capname="cell"
+			id="809ce61c-1945-4726-acbf-9e0549170ebc"
+			name="CellC2"
+			refimgid="afe2222b-2d11-4df7-8506-f3c7db6c4429"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/element[@class='EXCEL7']/tabpagelist[@automationid='Book1.xlsx']/tabpage[@automationid='Sheet1']/table[@automationid='Grid']/cell[@name='C2']"
+			robustPath="/form[@processname='EXCEL']//cell[@name='C2']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//tabpagelist[@automationid='Book1.xlsx']/tabpage[@automationid='Sheet1']/?/?/cell[@name='C2']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="da2791ee-7538-4ac1-bec5-da9df4222972"
+			name="EXCEL6"
+			refimgid="c4a36bf7-d059-4fba-b149-133065ce762f"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/element[@class='EXCEL6']"
+			robustPath="/form[@processname='EXCEL']/?/?/element[@class='EXCEL6']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/element[@class='EXCEL6']
+			</item>
+			<item
+			addcaps="text,uiautomation,uiautomationvalue"
+			capname="text"
+			id="3b0bb978-948a-43fa-a8e0-5d4bc1c9c08f"
+			name="SystemItemNameDisplay"
+			refimgid="e19b2a1c-e4e9-456a-80c3-7af758f8c7c3"
+			refpath="/form[@title='Open']/element[@class='DUIViewWndClassName']/container/element[@class='CtrlNotifySink' and @instance='1']/container/container/listitem[@automationid='1']/text[@automationid='System.ItemNameDisplay']"
+			robustPath="/form[@processname='EXCEL']//listitem[@automationid='1']/text[@automationid='System.ItemNameDisplay']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[@class='DUIViewWndClassName']//container[@caption='ShellView']/?/?/listitem[@automationid='1']/text[@automationid='System.ItemNameDisplay']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="0e9d5e19-2e2f-47ca-a7b3-af845087d698"
+			name="ButtonOpen"
+			refimgid="10993e5b-aa0f-4e5b-9442-ca511b825cf4"
+			robustPath="/form[@processname='EXCEL']/button[@text='&amp;Open']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/form[@processname='EXCEL']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="listitem,uiautomation,uiautomationscrollitem"
+			capname="listitem"
+			id="6623c739-41e7-46dd-9fd2-14df085b7456"
+			name="SaveAs"
+			refimgid="231287a5-385d-4d07-8b7d-7222ab836c0e"
+			refpath="/form[@processname='EXCEL']/element/container[@class='NetUIHWND']/container[@automationid='BackstageView']/list/listitem[@name='Save As']"
+			robustPath="/form[@processname='EXCEL']//listitem[@name='Save As']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='BackstageView']/list[@automationid='NavBarMenu']/listitem[@name='Save As']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke,uiautomationscrollitem"
+			capname="button"
+			id="a6124daf-552f-454b-8b07-e9cfe67463fc"
+			name="Browse1"
+			refimgid="1d0d16fb-0de2-4bdd-8dad-0432f26bf88d"
+			refpath="/form[@processname='EXCEL']/element/container[@class='NetUIHWND']/container[@automationid='BackstageView']/container/container[@name='Saving Features']/container/contextmenu/container/button[@name='Browse']"
+			robustPath="/form[@processname='EXCEL']//button[@name='Browse']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='BackstageView']/container[@name='Save As']/container[@name='Saving Features']/?/?/contextmenu[@name='Saving Features']/?/?/button[@name='Browse']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="317630d3-e887-483d-ad5e-38314245e258"
+			name="ButtonOpen1"
+			refimgid="1972d66c-c24e-4230-8af7-70362e0ebfe1"
+			refpath="/form[@title='Open']/button[@text='&amp;Open']"
+			robustPath="/form[@processname='EXCEL']/button[@text='&amp;Open']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/button[@text='&amp;Open']
+			</item>
+			<item
+			addcaps="unknown,nativewindow"
+			capname="unknown"
+			id="40f4ba2f-ebae-4976-9dff-796dfa6af281"
+			name="EXCEL1"
+			refimgid="85f412a6-34a8-47fb-b90f-681b8816463d"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL&lt;']"
+			robustPath="/form[@processname='EXCEL']/element[@class='EXCEL&lt;']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[@class='EXCEL&lt;']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="b5816f5a-a3fc-42f2-b832-3f339a6e211d"
+			name="CellA1"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook/table/row[@index='1']/cell[@address='A1']"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='1']/cell[@address='A1']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26"
+			name="CellA6"
+			refimgid="a96c9187-e5dc-4136-b098-73956c476da4"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='TestFile.xlsx']/table[@name='Sheet1']/row[@index='6']/cell[@address='A6']"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A6']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="c2239afe-689c-4f1d-a8b9-32c1a74b7526"
+			name="Close"
+			refimgid="85712180-3f95-414a-8fcb-c59592d56505"
+			refpath="/form[@processname='EXCEL']/element[@class='EXCEL2' and @instance='0']/container/element/element/container[@class='NetUIHWND']/container[@name='Ribbon']/button[@name='Close']"
+			robustPath="/form[@processname='EXCEL']//button[@name='Close']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Close']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="7dc0fe92-f0a2-4cee-8aa8-0e8d48a8961c"
+			name="Save"
+			refimgid="eb69c469-027a-4e79-9d49-d8963d8b94ab"
+			refpath="/form[@title='Microsoft Excel']/container[@class='NetUIHWND']/form[@name='Microsoft Excel']/button[@name='Save']"
+			robustPath="/form[@processname='EXCEL']//button[@name='Save']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/form[@name='Microsoft Excel']/button[@name='Save']
+			</item>
+			<basepath>
+				/form[@processname='EXCEL']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAFNSURBVDhPY4ABmcIQTuViN2OFYrc0+SLXyfIF
+zgfk85zeyuc5/5fPdfoPVYYJFCs81ymUedxWLHP/r1jq/h9owH+FItf/CoUu/+XzgZqhBoDFkLB8
+octP+ULXCQxKFZ7/Fcs9/hMyAB38+vMbbAjRBoDEQADmAhgbbkDlmgn/T9+/8l+1zOu/RrnP/1sv
+HvzffukwTheAAIoBsbMrwYJ5S9r/V6+Z+P/P37//3TpSiHcByAuXn9z6f+Lupf8PXj/9v/bMLrxh
+AAIYBqQvbARLgALIvjWOtDCAGQByOgi7diST5gIVIH331eP/my7s///0/UtIAJLigvLVfWBBr97M
+/22bZoHZfr3ZxLtg9sE1/9ee3Q1OB7pVAf9ffXr7/9CNM6SFAc1TIjKG5wViMxM07+EGoOysWOZm
+BjQgTaHQdRowOx+Wy3P6gN8ABgYA0S8tdd7bJP8AAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<item
+		addcaps="button,uiautomation,uiautomationinvoke"
+		capname="button"
+		id="d389ae35-e150-43c1-8ebe-ba884b6be9e0"
+		name="Maximize"
+		refimgid="64dc6d7a-bc91-4c2c-9a6f-369f32594f2a"
+		refpath="/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/button[2]"
+		robustPath="/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/button[2]"
+		searchtimeout="30000ms">
+			/form[@processname='EXCEL']/element[@class='FullpageUIHost']/container[@class='NetUIHWND']/button[2]
+		</item>
+		<item
+		addcaps="button,nativewindow"
+		capname="button"
+		id="47412e81-8d1c-4935-9809-34d4d29fbe35"
+		name="ButtonSave"
+		refimgid="cf9d4d3c-9ed0-434d-8bf5-d897de415515"
+		refpath="/form[@title='Save As']/button[@text='&amp;Save']"
+		robustPath="/form[@processname='EXCEL']/button[@text='&amp;Save']"
+		searchtimeout="30000ms">
+			/form[@processname='EXCEL']/button[@text='&amp;Save']
+		</item>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
