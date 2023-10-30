@@ -1,7 +1,7 @@
 # Ranorex.ExcelTests
 Sample Automation Tests using Microsoft Excel
 
-Test Cases:
+## Test Cases:
 - Launch Excel
 - Create Workbook
 - Search Cells
@@ -9,31 +9,40 @@ Test Cases:
 - Insert/Delete/Copy Cells, Rows and Columns
 - Save Workbook ensuring Prompt Message
 
-Requirements/Notes
+## Requirements/Notes
 - Excel Version Office 365 (2019). (There's a high possible chance that these test cases will not work on Office 2019 only)
 - Ranorex Solution is only configured for single instance
 - Use Cache was turned off on repository
-  
-**How to Test each Test Cases:**
 - Make sure other test cases are unchecked and run a single test case only
 
+  
+## How to Test each Test Cases:
+
 **1. Launch Excel (Recording Module)**
-    - Launches excel application using default ranorex feature
-    - Check the Test Case **"Launch_Excel"** and Run the test individually
+```
+- Launches excel application using default ranorex feature
+- Check the Test Case **"Launch_Excel"** and Run the test individually
+```
     
 **2. Create Workbook (Recording Module)**
-    - Creates Excel Workbook with default filename
-    - Filename can be configured under test case's parameters
-    - Check the Test Case **"CreateWorkbook"** and Run the test individually
-    - View test details on report generated
+```
+- Creates Excel Workbook with default filename
+- Filename can be configured under test case's parameters
+- Check the Test Case **"CreateWorkbook"** and Run the test individually
+- View test details on report generated
+```
 
 **3. Search Cells (Recording Module + Code Module)**
-    - Opens Excel file via Recording module then runs a Code module to select specific cells. Then after selecting, it navigates to the next cell.
-    - Cells to be selected and filename can be configured at test case's parameters
-    - Check the Test Case **"SearchCells"** and Run the test individually.
-    - View test details on report generated
+```
+- Opens Excel file via Recording module then runs a Code module to select specific cells.
+- Then after selecting, it navigates to the next cell.
+- Cells to be selected and filename can be configured at test case's parameters
+- Check the Test Case **"SearchCells"** and Run the test individually.
+- View test details on report generated
+```
 
 **4. Add Formula and Check Computation (Recording Module + Code Module)**
+```
 - Creates Excel File with values and formula via User Code
 - 3 grouped modules that do the following tests:
       
@@ -44,6 +53,7 @@ Requirements/Notes
 -  Parameters in the test can be configured on Test Case and grouped modules depending on their individual usage
 -  Check the Test Case **"AddFormulaCheckCalculation"** and Run the test individually.
 -  View test details on report generated
+```
 
 **5. Insert/Delete/Copy Cells, Rows and Columns (Recording Module + Code Module)**
     - Uses recording modules to create and save excel file including adding data manually (values to add are configured on Test Case's parameters)
