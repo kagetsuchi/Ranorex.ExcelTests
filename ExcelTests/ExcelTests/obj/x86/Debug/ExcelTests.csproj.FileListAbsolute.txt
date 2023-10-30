@@ -18,3 +18,23 @@ E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.cspr
 E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.exe
 E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.pdb
 E:\Ranorex Tests\Excel Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.AssemblyReference.cache
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.rxtmg
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.rxtst
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.exe.config
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.xml
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.exe
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\ExcelTests.pdb
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.dll
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex.Core.Resolver.dll
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex.ReportToPDF.exe
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\office.dll
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.pdb
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\Ranorex Automation Helpers.xml
+D:\Ranorex Tests\ExcelTests\ExcelTests\bin\Debug\office.xml
+D:\Ranorex Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.AssemblyReference.cache
+D:\Ranorex Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.CoreCompileInputs.cache
+D:\Ranorex Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.csproj.CopyComplete
+D:\Ranorex Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.exe
+D:\Ranorex Tests\ExcelTests\ExcelTests\obj\x86\Debug\ExcelTests.pdb

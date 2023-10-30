@@ -218,7 +218,7 @@ rxversion="10.7">
 		kattr="0.5"
 		kcap="1"
 		ksib="10"
-		q="0.5">
+		q="1">
 			<cap
 			cost="10"
 			name="unknown">

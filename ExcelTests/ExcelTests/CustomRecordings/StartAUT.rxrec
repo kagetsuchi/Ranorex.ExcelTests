@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="be525506-317f-4be5-8f86-f3803e1f30f2"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="StartAUT"
+	namespace="ExcelTests.CustomRecordings">
+	</codegen>
+	<variables>
+		<var
+		id="df9df0ed-7458-41fe-8e53-77176015a736"
+		name="StartAutProcessIDVar">
+		</var>
+	</variables>
+	<recorditems>
+		<runapprecorditem
+		enabled="True"
+		maximized="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ReturnVariable"
+				variable="StartAutProcessIDVar">
+				</binding>
+			</bindings>
+			<filename>
+				C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE
+			</filename>
+			<args>
+			</args>
+		</runapprecorditem>
+	</recorditems>
+	<repository
+	id="6a19bbd1-04ac-46b4-babd-6b132ec297cb"
+	name="ExcelTestsRepository"
+	relativepath="..\ExcelTestsRepository.rxrep">
+		<codegen
+		classname="ExcelTestsRepository"
+		namespace="ExcelTests">
+		</codegen>
+		<rootfolder
+		id="e2534433-f71e-44ec-a31d-ab40ab716087"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		StartAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -4,7 +4,7 @@
 		<flatlistofchildren>
 			<testmodule
 			id="05581d6f-c993-472b-bd09-9e403148819d"
-			name="Failed"
+			name="ReportFailedValidation"
 			ref="103e23a1-1886-419b-914f-69daf2c15756"
 			type="Recording">
 			</testmodule>
@@ -24,36 +24,32 @@
 			</testmodule>
 			<modulegroup
 			id="117dcaa8-a9f2-4fd2-9324-7fd7aa10f62a"
-			name="UpdateFormulaMatchExpectedValue"
+			name="ModifyFormula"
 			ref="d09da53b-3f34-4b77-ab45-9de9863e3c85">
-				<databinding>
-					<var
-					dataname="NewFormula"
-					datasourceid="76c8ad14-998f-4000-a40b-ee1d1376b972"
-					variableid="db563f7b-8dc0-4468-8d82-a9fc0b51e61b"
-					variablename="ModuleGroupNewFormula">
-					</var>
-					<var
-					dataname="NewComputedValueFormulaChange"
-					datasourceid="76c8ad14-998f-4000-a40b-ee1d1376b972"
-					variableid="54d038f7-4220-484b-92ec-e7d7d8545450"
-					variablename="ModuleGroupNewComputedValueFormulaChange">
-					</var>
-				</databinding>
+				<description>
+					<![CDATA[Formula to be assigned and expected value are inside this module parameters]]>
+				</description>
 			</modulegroup>
 			<modulegroup
 			id="13f39972-80f0-48de-b48f-1cf3b0ae670f"
-			name="INVALID_UpdateCellMatchExpectedValue"
+			name="PutInvalidCharacters"
 			ref="ac9ad7fd-a809-4806-8e71-b2d03a9b4b15">
+				<description>
+					<![CDATA[Character to be assigned is inside this module parameters]]>
+				</description>
 				<databinding>
 					<var
-					dataname="InvalidValue"
+					dataname="CurrentFormulaCellValue"
 					datasourceid="76c8ad14-998f-4000-a40b-ee1d1376b972"
-					variableid="d08ced88-0401-4d71-8857-48a5aafc349d"
-					variablename="ModuleGroupInvalidValue">
+					variableid="0db30ee9-d255-4bf6-801a-b130acb2642d"
+					variablename="ModuleGroupCapturedValue">
 					</var>
 				</databinding>
 			</modulegroup>
+			<teardown
+			id="205e626e-ded9-49c4-9238-cb514639587f"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="22b09235-8440-4395-b60d-b47907afec6d"
 			name="CloseAUT"
@@ -68,19 +64,94 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="2b1a2120-b2d5-4f1d-9e24-82733a54a29c"
+			name="SelectEmptyWorkbook"
+			ref="e337fc52-855a-473a-9445-dee733c1f814"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="2c39c586-5c5f-413c-9463-465ad0dfa3ec"
+			name="SaveNewWorkbook"
+			ref="591f34ed-9e0b-4f18-b21d-e5a7991b0eca"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExcelFilename"
+					datasourceid="e4497624-f09b-4fc9-9155-c78ca16f9d95"
+					variableid="b7ab26b1-279e-404a-bd3a-d390381c3bfb"
+					variablename="ExcelFilename">
+					</var>
+				</databinding>
+			</testmodule>
+			<setup
+			id="2df883ae-b2cf-4895-8ecb-91d43c0b1d64"
+			name="setup">
+			</setup>
 			<testcase
 			id="2e05e42e-79a7-4414-8754-96bfdcace93e"
 			name="Launch_Excel">
+				<description>
+					<![CDATA[Launching Microsoft Excel via Record Module]]>
+				</description>
 			</testcase>
 			<teardown
 			id="33ebd10f-03ac-4183-a4a3-4fb83da8ce46"
 			name="teardown">
 			</teardown>
 			<testmodule
+			id="36157a9c-5aa8-4ed0-bc79-27b4e9deb461"
+			name="SaveNewWorkbook"
+			ref="591f34ed-9e0b-4f18-b21d-e5a7991b0eca"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExcelFilename"
+					datasourceid="f28205a2-c09a-4baf-b3f9-74a735a65956"
+					variableid="b7ab26b1-279e-404a-bd3a-d390381c3bfb"
+					variablename="ExcelFilename">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="39ec2459-06b0-4a86-b579-c37379cc2f48"
-			name="SelectWorkbook"
+			name="SelectEmptyWorkbook"
 			ref="e337fc52-855a-473a-9445-dee733c1f814"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3b9c3a53-6055-4292-b267-d034174014a9"
+			name="SelectEmptyWorkbook"
+			ref="e337fc52-855a-473a-9445-dee733c1f814"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="3d440549-a7a9-49c0-bc84-3e149c226392"
+			name="StartAUT"
+			ref="be525506-317f-4be5-8f86-f3803e1f30f2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f5373cf2-6163-446f-9cbe-f22f65055c84"
+					variableid="df9df0ed-7458-41fe-8e53-77176015a736"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3f45d12a-2cec-4e52-a636-3508d3aa13f3"
+			name="CloseAUT"
+			ref="fbeeb6f8-e9fc-452c-aebf-00130a7c4c50"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f5373cf2-6163-446f-9cbe-f22f65055c84"
+					variableid="0cf3d122-1ff8-4a83-9ade-9896266dd07b"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<testsuite
 			ExportColumnList="None"
@@ -118,16 +189,34 @@
 			name="SelectCells"
 			ref="13b17db9-baa0-423f-a536-15ba594afaf6"
 			type="UserCode">
+				<description>
+					<![CDATA[Select Cells based on User-defined parameters on Test Case]]>
+				</description>
 			</testmodule>
 			<testmodule
 			id="5705ab22-a3b3-4fd7-8da0-1ff23d68f03e"
 			name="CreateWorkbook"
 			ref="d1458472-36e9-4632-aa10-b28b621b9138"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Filename"
+					datasourceid="cbc2e2c8-e3a4-4fae-836b-b611d06f1b00"
+					variableid="d993892f-4d5b-43e8-b328-fb0503d10f08"
+					variablename="Filename">
+					</var>
+				</databinding>
 			</testmodule>
 			<smartfoldernode
 			id="5a89993f-6f28-4510-a252-562f2b2885eb"
-			name="InvalidFormulaCellOutput">
+			name="Is_Invalid_Cell_Output?">
+				<parameters>
+					<param
+					mask="False"
+					name="CurrentFormulaOutput"
+					value="">
+					</param>
+				</parameters>
 				<conditiongroup
 				comparison="AND"
 				enabled="True">
@@ -185,37 +274,17 @@
 					<param
 					mask="False"
 					name="ExcelFilename"
-					value="TestFile1">
+					value="TestFormulaValidation1">
+					</param>
+					<param
+					mask="False"
+					name="InitialFormula"
+					value="=(A1+A2)*A3+A4-A5">
 					</param>
 					<param
 					mask="False"
 					name="ComputedValue"
 					value="114">
-					</param>
-					<param
-					mask="False"
-					name="NewCellValue"
-					value="25">
-					</param>
-					<param
-					mask="False"
-					name="NewComputedValue"
-					value="264">
-					</param>
-					<param
-					mask="False"
-					name="NewFormula"
-					value="=(A1+A2)*A3+A4+A5">
-					</param>
-					<param
-					mask="False"
-					name="NewComputedValueFormulaChange"
-					value="282">
-					</param>
-					<param
-					mask="False"
-					name="InvalidValue"
-					value="ABC">
 					</param>
 					<param
 					mask="False"
@@ -229,14 +298,30 @@
 			name="setup">
 			</setup>
 			<teardown
+			id="7b479bdc-41a6-4fe3-b441-251e9e555b7e"
+			name="teardown">
+			</teardown>
+			<teardown
 			id="90a64cee-a04e-4da1-b970-8e5faa7e9ec5"
 			name="teardown">
 			</teardown>
+			<testmodule
+			id="90b0a663-624b-44db-8414-c4740dd2170f"
+			name="ManipulateExcel"
+			ref="48c6ef4d-7d42-4cf2-b107-878b81850e41"
+			type="UserCode">
+				<description>
+					<![CDATA[Cells/Rows/Columns to be manipulated are assigned to Test Case parameters]]>
+				</description>
+			</testmodule>
 			<testmodule
 			id="91273ac2-7070-47d4-a628-801466fd8442"
 			name="CreateExcelWithValueAndFormula"
 			ref="bf537a2d-df13-461b-8df4-c1c4d021a89e"
 			type="UserCode">
+				<description>
+					<![CDATA[Creates Excel File with Values and Formula / Validates Expected Output after creating excel]]>
+				</description>
 			</testmodule>
 			<teardown
 			id="9847a577-87ac-4d6d-8838-21fcdb065752"
@@ -272,7 +357,7 @@
 			</testmodule>
 			<testmodule
 			id="a67bbc3e-98a6-43bc-bd1e-c1c2ddbeff3b"
-			name="SaveWhenClosing"
+			name="SaveAndCloseCurrentWorkbook"
 			ref="7a336b3e-089b-4130-b4d4-a9dab001691a"
 			type="Recording">
 				<databinding>
@@ -284,17 +369,99 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a93d8159-7406-4319-be13-425aa2f15128"
+			name="SaveNewWorkbook"
+			ref="591f34ed-9e0b-4f18-b21d-e5a7991b0eca"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="ExcelFilename"
+					datasourceid="f43b0ab4-7e76-424c-8c75-8c8185a3f23e"
+					variableid="b7ab26b1-279e-404a-bd3a-d390381c3bfb"
+					variablename="ExcelFilename">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ad0ad6b7-ed6e-4792-a3b4-495fe76eb081"
+			name="AddCellValues"
+			ref="2bd2f101-856b-4a9c-af66-6bd6e2f762b2"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="b27ee98b-7ec3-4092-ac47-f7d64e06ccd4"
+			name="setup">
+			</setup>
+			<setup
+			id="b982c777-3892-40cd-a61c-78986f2d107b"
+			name="setup">
+			</setup>
 			<setup
 			id="c5606f4f-d352-404e-89c1-d4a8804fd6b9"
 			name="setup">
 			</setup>
+			<testmodule
+			id="caccd11a-1c88-4ecc-9922-723e39ce2f5e"
+			name="PopupWatchWhenClosing"
+			ref="0535afec-245a-4e49-8f06-2875308934f9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f5373cf2-6163-446f-9cbe-f22f65055c84"
+					variableid="bbd0f339-2b7b-4d59-a6d0-a31c431cb3c6"
+					variablename="ExcelProcessId">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="cbc2e2c8-e3a4-4fae-836b-b611d06f1b00"
 			name="CreateWorkbook">
+				<description>
+					<![CDATA[<p>Creating Sample Workbook via Record Module</p><p>Filename is defined on Test Case Parameters</p>]]>
+				</description>
+				<parameters>
+					<param
+					mask="False"
+					name="Filename"
+					value="CreateWorkbookTest1">
+					</param>
+				</parameters>
 			</testcase>
+			<testmodule
+			id="d746b3bd-44fb-43ab-b6be-a83d795d393c"
+			name="StartAUT"
+			ref="be525506-317f-4be5-8f86-f3803e1f30f2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="f5373cf2-6163-446f-9cbe-f22f65055c84"
+					variableid="df9df0ed-7458-41fe-8e53-77176015a736"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
+			<teardown
+			id="dfdfe8cf-d0de-4c3e-ac56-ce532d34c8cd"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="e42fe1da-986a-496f-8ae1-0bae4a75396e"
+			name="AddCellValues"
+			ref="2bd2f101-856b-4a9c-af66-6bd6e2f762b2"
+			type="Recording">
+				<description>
+					<![CDATA[values on each cell are defined in the variables inside this recording module]]>
+				</description>
+			</testmodule>
 			<testcase
 			id="e4497624-f09b-4fc9-9155-c78ca16f9d95"
 			name="SearchCells">
+				<description>
+					<![CDATA[<p>Searching/Navigating Cells&nbsp;via Record and&nbsp;Code Modules</p>]]>
+				</description>
 				<parameters>
 					<param
 					mask="False"
@@ -305,6 +472,83 @@
 					mask="False"
 					name="CellToNavigate"
 					value="C9">
+					</param>
+					<param
+					mask="False"
+					name="ExcelFilename"
+					value="SearchCellsTest1">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="f28205a2-c09a-4baf-b3f9-74a735a65956"
+			name="Cells_InsertDeleteCopy">
+				<parameters>
+					<param
+					mask="False"
+					name="ExcelFilename"
+					value="CellManipulation1">
+					</param>
+					<param
+					mask="False"
+					name="AddStartRow"
+					value="2">
+					</param>
+					<param
+					mask="False"
+					name="RowsToAdd"
+					value="5">
+					</param>
+					<param
+					mask="False"
+					name="DeleteStartRow"
+					value="4">
+					</param>
+					<param
+					mask="False"
+					name="RowsToDelete"
+					value="2">
+					</param>
+					<param
+					mask="False"
+					name="AddStartColumn"
+					value="B">
+					</param>
+					<param
+					mask="False"
+					name="ColumnsToAdd"
+					value="3">
+					</param>
+					<param
+					mask="False"
+					name="DeleteStartColumn"
+					value="D">
+					</param>
+					<param
+					mask="False"
+					name="ColumnsToDelete"
+					value="1">
+					</param>
+					<param
+					mask="False"
+					name="TargetCellsToCopy"
+					value="A7,A8,A9">
+					</param>
+					<param
+					mask="False"
+					name="TargetCellsToPaste"
+					value="K9,J11,F20">
+					</param>
+				</parameters>
+			</testcase>
+			<testcase
+			id="f43b0ab4-7e76-424c-8c75-8c8185a3f23e"
+			name="SaveWorkbookWithPrompt">
+				<parameters>
+					<param
+					mask="False"
+					name="ExcelFilename"
+					value="TestWorkbookSavePrompt1">
 					</param>
 				</parameters>
 			</testcase>
@@ -322,22 +566,11 @@
 			</testcase>
 			<modulegroup
 			id="f8e781a9-eb09-44a0-9162-6509f48b964d"
-			name="VALID_UpdateCellMatchExpectedValue"
+			name="PutValidCharacters"
 			ref="1acb620f-1458-40cb-86a1-3315e43c44e3">
-				<databinding>
-					<var
-					dataname="NewCellValue"
-					datasourceid="76c8ad14-998f-4000-a40b-ee1d1376b972"
-					variableid="b4cab96f-8db9-484a-b148-7e79b049fe36"
-					variablename="ModuleGroupNewCellValue">
-					</var>
-					<var
-					dataname="NewComputedValue"
-					datasourceid="76c8ad14-998f-4000-a40b-ee1d1376b972"
-					variableid="ea411158-48c2-45cd-8f78-535945254bee"
-					variablename="ModuleGroupNewComputedValue">
-					</var>
-				</databinding>
+				<description>
+					<![CDATA[Character to be assigned and expected value are inside this module parameters]]>
+				</description>
 			</modulegroup>
 			<setup
 			id="fe05c219-89c2-4859-a42a-8c26700a08ee"
@@ -405,11 +638,11 @@
 							id="6f89b024-bc19-40de-8887-ef6802f160db"
 							name="StartAUT">
 							</testmodule>
+							<testmodule
+							id="39ec2459-06b0-4a86-b579-c37379cc2f48"
+							name="SelectEmptyWorkbook">
+							</testmodule>
 						</setup>
-						<testmodule
-						id="39ec2459-06b0-4a86-b579-c37379cc2f48"
-						name="SelectWorkbook">
-						</testmodule>
 						<testmodule
 						id="4dc693a4-9859-4079-adec-1bb7b37a03f5"
 						name="SelectCells">
@@ -417,6 +650,10 @@
 						<teardown
 						id="90a64cee-a04e-4da1-b970-8e5faa7e9ec5"
 						name="teardown">
+							<testmodule
+							id="2c39c586-5c5f-413c-9463-465ad0dfa3ec"
+							name="SaveNewWorkbook">
+							</testmodule>
 							<testmodule
 							id="9ed2d2f3-7ec6-45cc-84da-9dfadbcfedc3"
 							name="CloseAUT">
@@ -426,34 +663,110 @@
 					<testcase
 					id="76c8ad14-998f-4000-a40b-ee1d1376b972"
 					name="AddFormulaCheckCalculation">
-						<testmodule
-						id="91273ac2-7070-47d4-a628-801466fd8442"
-						name="CreateExcelWithValueAndFormula">
-						</testmodule>
+						<setup
+						id="b27ee98b-7ec3-4092-ac47-f7d64e06ccd4"
+						name="setup">
+							<testmodule
+							id="91273ac2-7070-47d4-a628-801466fd8442"
+							name="CreateExcelWithValueAndFormula">
+							</testmodule>
+						</setup>
 						<modulegroup
 						id="f8e781a9-eb09-44a0-9162-6509f48b964d"
-						name="VALID_UpdateCellMatchExpectedValue">
+						name="PutValidCharacters">
 						</modulegroup>
 						<modulegroup
 						id="117dcaa8-a9f2-4fd2-9324-7fd7aa10f62a"
-						name="UpdateFormulaMatchExpectedValue">
+						name="ModifyFormula">
 						</modulegroup>
 						<modulegroup
 						id="13f39972-80f0-48de-b48f-1cf3b0ae670f"
-						name="INVALID_UpdateCellMatchExpectedValue">
+						name="PutInvalidCharacters">
 						</modulegroup>
 						<smartfoldernode
 						id="5a89993f-6f28-4510-a252-562f2b2885eb"
-						name="InvalidFormulaCellOutput">
+						name="Is_Invalid_Cell_Output?">
 							<testmodule
 							id="05581d6f-c993-472b-bd09-9e403148819d"
-							name="Failed">
+							name="ReportFailedValidation">
 							</testmodule>
 						</smartfoldernode>
+						<teardown
+						id="7b479bdc-41a6-4fe3-b441-251e9e555b7e"
+						name="teardown">
+							<testmodule
+							id="a67bbc3e-98a6-43bc-bd1e-c1c2ddbeff3b"
+							name="SaveAndCloseCurrentWorkbook">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="f28205a2-c09a-4baf-b3f9-74a735a65956"
+					name="Cells_InsertDeleteCopy">
+						<setup
+						id="b982c777-3892-40cd-a61c-78986f2d107b"
+						name="setup">
+							<testmodule
+							id="3d440549-a7a9-49c0-bc84-3e149c226392"
+							name="StartAUT">
+							</testmodule>
+							<testmodule
+							id="2b1a2120-b2d5-4f1d-9e24-82733a54a29c"
+							name="SelectEmptyWorkbook">
+							</testmodule>
+						</setup>
 						<testmodule
-						id="a67bbc3e-98a6-43bc-bd1e-c1c2ddbeff3b"
-						name="SaveWhenClosing">
+						id="e42fe1da-986a-496f-8ae1-0bae4a75396e"
+						name="AddCellValues">
 						</testmodule>
+						<testmodule
+						id="90b0a663-624b-44db-8414-c4740dd2170f"
+						name="ManipulateExcel">
+						</testmodule>
+						<teardown
+						id="dfdfe8cf-d0de-4c3e-ac56-ce532d34c8cd"
+						name="teardown">
+							<testmodule
+							id="36157a9c-5aa8-4ed0-bc79-27b4e9deb461"
+							name="SaveNewWorkbook">
+							</testmodule>
+							<testmodule
+							id="3f45d12a-2cec-4e52-a636-3508d3aa13f3"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
+					<testcase
+					id="f43b0ab4-7e76-424c-8c75-8c8185a3f23e"
+					name="SaveWorkbookWithPrompt">
+						<setup
+						id="2df883ae-b2cf-4895-8ecb-91d43c0b1d64"
+						name="setup">
+							<testmodule
+							id="d746b3bd-44fb-43ab-b6be-a83d795d393c"
+							name="StartAUT">
+							</testmodule>
+							<testmodule
+							id="3b9c3a53-6055-4292-b267-d034174014a9"
+							name="SelectEmptyWorkbook">
+							</testmodule>
+						</setup>
+						<teardown
+						id="205e626e-ded9-49c4-9238-cb514639587f"
+						name="teardown">
+							<testmodule
+							id="a93d8159-7406-4319-be13-425aa2f15128"
+							name="SaveNewWorkbook">
+							</testmodule>
+							<testmodule
+							id="ad0ad6b7-ed6e-4792-a3b4-495fe76eb081"
+							name="AddCellValues">
+							</testmodule>
+							<testmodule
+							id="caccd11a-1c88-4ecc-9922-723e39ce2f5e"
+							name="PopupWatchWhenClosing">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -465,12 +778,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="e4497624-f09b-4fc9-9155-c78ca16f9d95">
-			</testcontainer>
-			<testcontainer
-			id="f5373cf2-6163-446f-9cbe-f22f65055c84">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>

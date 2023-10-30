@@ -9,8 +9,12 @@
       <string>{88A0B281-4812-4AC8-813A-2B7FB55D1D15}</string>
       <string>6e12a760-6636-488c-b3e9-7d256aa61ae5</string>
       <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>bc89bc74-1552-4c0c-b510-23133d8a2105</string>
+      <string>be525506-317f-4be5-8f86-f3803e1f30f2</string>
+      <string>df9df0ed-7458-41fe-8e53-77176015a736</string>
+      <string>a160395c-4380-40b3-8203-b2bdee321b31</string>
     </ArrayOfString>
   </SerializedValue>
-  <ProjectBrowserState value="[Solution ExcelTests[ExcelTests[MatchExpectedValue.rxrec[]SaveWhenClosing.rxrec[]]]]&#xD;&#xA;Solution ExcelTests&#xD;&#xA;Solution ExcelTests" />
+  <ProjectBrowserState value="[Solution ExcelTests[ExcelTests[CustomRecordings[]]]]&#xD;&#xA;Solution ExcelTests\ExcelTests\ExcelTests.rxtst&#xD;&#xA;Solution ExcelTests" />
   <StartupProject value="{88A0B281-4812-4AC8-813A-2B7FB55D1D15}" />
 </Properties>

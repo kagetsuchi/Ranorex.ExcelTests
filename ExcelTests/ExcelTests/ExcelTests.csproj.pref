@@ -1,12 +1,7 @@
 ﻿<Properties>
-  <Array name="active">
-    <Element value="ExcelTests.rxtst" />
-  </Array>
+  <Array name="active" />
   <Array name="bookmarks" />
   <Array name="files">
-    <Element value="CaptureFormulaCell.cs" />
-    <Element value="Program.cs" />
-    <Element value="CreateWorkbookWithValuesAndFormula.cs" />
     <Element value="ExcelTests.rxtst" />
   </Array>
   <Properties name="projectSavedData">
@@ -15,8 +10,10 @@
     </Properties>
     <Array name="recentusercodeselections">
       <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopAllPopupWatchers()" />
-      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(RepoItemInfo findElement, RepoItemInfo clickElement)" />
       <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopAllPopupWatchers()" />
+      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StopPopupWatcher(RepoItemInfo findElement, RepoItemInfo clickElement)" />
+      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.CheckFilesExist(String path, String pattern, Int32 expectedCount, Int32 timeout)" />
+      <Element value="Ranorex.AutomationHelpers.UserCodeCollections.PopupWatcherLibrary.StartPopupWatcher(RepoItemInfo findElement, RepoItemInfo clickElement)" />
       <Element value="Ranorex.AutomationHelpers.UserCodeCollections.FileLibrary.AppendStringToExistingFile(String text, String path, Boolean addNewLine)" />
     </Array>
   </Properties>

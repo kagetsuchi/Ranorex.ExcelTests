@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="4c325e52-d201-46ec-a935-68c0bef0a6af"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="MatchExpectedValue"
+	namespace="ExcelTests.CustomRecordings">
+	</codegen>
+	<variables>
+		<var
+		id="a73177c9-8092-4017-8747-e66a0338ad92"
+		name="NewComputedValue">
+		</var>
+	</variables>
+	<recorditems>
+		<invokeactionrecorditem
+		action="Focus"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0dfce31a-8682-4158-89d8-70e9f6b1e32f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<arguments
+			id="da0a549d-d520-4a4b-a22e-73186a3d1d94">
+			</arguments>
+		</invokeactionrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message="Formula Cell Value"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="cf583987-7151-4342-82a2-6e45d3185882">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message="Expected Value:"
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="1c479c71-76f9-4f86-a7cd-6df46414dc02">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="2d27015f-5625-4628-93fa-7cd91a73f76e">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="NewComputedValue">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="6fab3f38-ff4a-4f40-8723-d04e0fa84c1e"
+		similarity="1">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="NewComputedValue">
+				</binding>
+			</bindings>
+			<info
+			id="b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26"
+			sourcename="ElementTree">
+				<element
+				capabilities="excelrange"
+				dontcache="False"
+				enabled="True"
+				flavor="office"
+				hasfocus="False"
+				index="0"
+				prefcap="cell"
+				rect="26,343,64,20"
+				role="cell"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="columnindex"
+					type="System.Int32">
+						1
+					</attribute>
+					<attribute
+					name="isheader"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="rowindex"
+					type="System.Int32">
+						6
+					</attribute>
+					<attribute
+					name="selected"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="text"
+					type="System.String">
+						264
+					</attribute>
+					<attribute
+					name="address"
+					type="System.String">
+						A6
+					</attribute>
+				</element>
+				<path>
+					/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<helperscreenshot
+			guid="027f654f-ed50-4959-9177-796db67e594b">
+				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
+igBaKKKAP//Z
+			</helperscreenshot>
+			<matchname>
+				Text
+			</matchname>
+			<matchvalue>
+				264
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="6a19bbd1-04ac-46b4-babd-6b132ec297cb"
+	name="ExcelTestsRepository"
+	relativepath="..\ExcelTestsRepository.rxrep">
+		<codegen
+		classname="ExcelTestsRepository"
+		namespace="ExcelTests">
+		</codegen>
+		<rootfolder
+		id="e2534433-f71e-44ec-a31d-ab40ab716087"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		MatchExpectedValue.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

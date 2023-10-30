@@ -157,18 +157,38 @@ namespace ExcelTests
             RepoItemInfo _buttonopen1Info;
             RepoItemInfo _excel1Info;
             RepoItemInfo _cella1Info;
+            RepoItemInfo _cella2Info;
+            RepoItemInfo _cella3Info;
+            RepoItemInfo _cella4Info;
+            RepoItemInfo _cella5Info;
             RepoItemInfo _cella6Info;
+            RepoItemInfo _cellb1Info;
+            RepoItemInfo _cellb2Info;
+            RepoItemInfo _cellb3Info;
+            RepoItemInfo _cellb4Info;
+            RepoItemInfo _cellb5Info;
             RepoItemInfo _closeInfo;
             RepoItemInfo _saveInfo;
             RepoItemInfo _sheet1Info;
             RepoItemInfo _saveas1Info;
             RepoItemInfo _msotcidplaceopenInfo;
+            RepoItemInfo _grid1Info;
+            RepoItemInfo _cell2Info;
+            RepoItemInfo _saveas2Info;
+            RepoItemInfo _buttonokInfo;
+            RepoItemInfo _text65535Info;
+            RepoItemInfo _savepathInfo;
+            RepoItemInfo _choosealocationInfo;
+            RepoItemInfo _filenameInfo;
+            RepoItemInfo _save3Info;
+            RepoItemInfo _savedialogInfo;
+            RepoItemInfo _save1Info;
 
             /// <summary>
             /// Creates a new Book1Excel  folder.
             /// </summary>
             public Book1ExcelAppFolder(RepoGenBaseFolder parentFolder) :
-                    base("Book1Excel", "/form[@processname='EXCEL']", parentFolder, 30000, null, true, "e22d9a7c-9790-46a6-aa66-eae57fc6476e", "")
+                    base("Book1Excel", "/form[@processname='EXCEL']", parentFolder, 30000, null, false, "e22d9a7c-9790-46a6-aa66-eae57fc6476e", "")
             {
                 _restoredownInfo = new RepoItemInfo(this, "RestoreDown", "element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Maximize']", ".//button[2]", 30000, null, "32927ec0-74ec-4c39-bd44-01880707f18c");
                 _text1001Info = new RepoItemInfo(this, "Text1001", "?/?/container[@class='DirectUIHWND']/element[1]/combobox[@class='ComboBox']/text[@controlid='1001']", ".//text[@controlid='1001']", 30000, null, "38a1e864-b298-42e4-905b-dffc43f4eac2");
@@ -190,12 +210,32 @@ namespace ExcelTests
                 _buttonopen1Info = new RepoItemInfo(this, "ButtonOpen1", "button[@text='&Open']", "button[@text='&Open']", 30000, null, "317630d3-e887-483d-ad5e-38314245e258");
                 _excel1Info = new RepoItemInfo(this, "EXCEL1", "element[@class='EXCEL<']", "element[@class='EXCEL<']", 30000, null, "40f4ba2f-ebae-4976-9dff-796dfa6af281");
                 _cella1Info = new RepoItemInfo(this, "CellA1", ".//table[@name='Sheet1']/row[@index='1']/cell[@address='A1']", ".//cell[@address='A1']", 30000, null, "b5816f5a-a3fc-42f2-b832-3f339a6e211d");
+                _cella2Info = new RepoItemInfo(this, "CellA2", ".//table[@name='Sheet1']/row[@index='2']/cell[@address='A2']", ".//cell[@address='A1']", 30000, null, "cd26613a-3be1-417a-9fea-e3fe6ae44b1d");
+                _cella3Info = new RepoItemInfo(this, "CellA3", ".//table[@name='Sheet1']/row[@index='3']/cell[@address='A3']", ".//cell[@address='A1']", 30000, null, "56bc67f5-4211-47b1-bbb1-8e243c01abf9");
+                _cella4Info = new RepoItemInfo(this, "CellA4", ".//table[@name='Sheet1']/row[@index='4']/cell[@address='A4']", ".//cell[@address='A1']", 30000, null, "386e23f4-4f4f-4702-932d-fd4408890bd6");
+                _cella5Info = new RepoItemInfo(this, "CellA5", ".//table[@name='Sheet1']/row[@index='5']/cell[@address='A5']", ".//cell[@address='A1']", 30000, null, "3aab0c93-9f63-4b21-a486-66a013a7f672");
                 _cella6Info = new RepoItemInfo(this, "CellA6", ".//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']", ".//cell[@address='A6']", 30000, null, "b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26");
+                _cellb1Info = new RepoItemInfo(this, "CellB1", ".//table[@name='Sheet1']/row[@index='1']/cell[@address='B1']", ".//cell[@address='A1']", 30000, null, "314ab0fc-54af-4679-9664-f07a1472b658");
+                _cellb2Info = new RepoItemInfo(this, "CellB2", ".//table[@name='Sheet1']/row[@index='2']/cell[@address='B2']", ".//cell[@address='A1']", 30000, null, "71ac5acf-546a-43b3-aa63-ce74609d5f4d");
+                _cellb3Info = new RepoItemInfo(this, "CellB3", ".//table[@name='Sheet1']/row[@index='3']/cell[@address='B3']", ".//cell[@address='A1']", 30000, null, "864cb453-902f-40e4-a111-dae9c6314239");
+                _cellb4Info = new RepoItemInfo(this, "CellB4", ".//table[@name='Sheet1']/row[@index='4']/cell[@address='B4']", ".//cell[@address='A1']", 30000, null, "ac2907c8-67fc-4a80-8697-2234e1d54e25");
+                _cellb5Info = new RepoItemInfo(this, "CellB5", ".//table[@name='Sheet1']/row[@index='5']/cell[@address='B5']", ".//cell[@address='A1']", 30000, null, "53310de0-1088-4f17-9c24-c7badc057084");
                 _closeInfo = new RepoItemInfo(this, "Close", "element[2]/container[@caption='Ribbon']//container[@name='Ribbon']/button[@name='Close']", ".//button[@name='Close']", 30000, null, "c2239afe-689c-4f1d-a8b9-32c1a74b7526");
-                _saveInfo = new RepoItemInfo(this, "Save", "?/?/form[@name='Microsoft Excel']/button[@name='Save']", ".//button[@name='Save']", 30000, null, "7dc0fe92-f0a2-4cee-8aa8-0e8d48a8961c");
+                _saveInfo = new RepoItemInfo(this, "Save", "*/*/form[@name='Microsoft Excel']/button[@name='Save']", "", 30000, null, "7dc0fe92-f0a2-4cee-8aa8-0e8d48a8961c");
                 _sheet1Info = new RepoItemInfo(this, "Sheet1", ".//table[@name='Sheet1']", "", 30000, null, "2f744f63-4102-49fd-835b-00df857bebd6");
                 _saveas1Info = new RepoItemInfo(this, "SaveAs1", ".//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@name='Save As']", "", 30000, null, "7978ed41-6e5e-4bac-b343-686f7c6e10a7");
                 _msotcidplaceopenInfo = new RepoItemInfo(this, "MsotcidPlaceOpen", ".//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@automationid='msotcidPlaceOpen']", "", 30000, null, "35be5c8c-d674-4685-ae04-00d60c247e89");
+                _grid1Info = new RepoItemInfo(this, "Grid1", ".//table[@automationid='Grid']", "", 30000, null, "23420a7e-daaa-46b5-b11a-9a3fca7bacdd");
+                _cell2Info = new RepoItemInfo(this, "Cell2", ".//container[@automationid='Book1']/?/?/table[@automationid='Grid']/cell[@name='2']", "", 30000, null, "0643cb64-a87a-4e8b-870a-3faca5669fe6");
+                _saveas2Info = new RepoItemInfo(this, "SaveAs2", "titlebar[@accessiblerole='TitleBar']", "", 30000, null, "9f90adb5-e233-4e40-b057-c1c90d198eb5");
+                _buttonokInfo = new RepoItemInfo(this, "ButtonOK", "button[@text='OK']", "", 30000, null, "881acc1c-c1d3-4a20-913e-bb515bd9d51a");
+                _text65535Info = new RepoItemInfo(this, "Text65535", "text[@controlid='65535']", "", 30000, null, "7b5739e7-2235-43c0-ae00-aeedcbbc5b26");
+                _savepathInfo = new RepoItemInfo(this, "SavePath", "*/combobox[@name='Choose a Location']/text[0]", "", 30000, null, "9853991e-010a-4b64-b389-7a1fd86d6c02");
+                _choosealocationInfo = new RepoItemInfo(this, "ChooseALocation", "?/?/form[@name='Save this file']/?/?/combobox[@name='Choose a Location']", "", 30000, null, "021ad083-a795-4987-bb6a-86dac5130ecc");
+                _filenameInfo = new RepoItemInfo(this, "FileName", "container[@class='NetUIHWND']//text[@accessiblerole='Text']", "", 30000, null, "e4e04189-491d-40c7-8c05-cca8fc810c75");
+                _save3Info = new RepoItemInfo(this, "Save3", "container[@class='NetUIHWND']/form[@name='Microsoft Excel']/button[@name='Save']", "", 30000, null, "1fba87be-1fff-4fa3-bbed-d4a1f01c683b");
+                _savedialogInfo = new RepoItemInfo(this, "SaveDialog", "container[@class='NetUIHWND']/form[@name='Microsoft Excel']", "", 30000, null, "5d4b8e31-7635-4d8e-9053-8346c7e93d8a");
+                _save1Info = new RepoItemInfo(this, "Save1", "container[@class='NetUIHWND']/form[@name='Save this file']/container[@classname='NetUIScrollViewer']/button[@name='Save']", "", 30000, null, "5e5a538c-b408-4a9c-9f85-368fa392cea9");
             }
 
             /// <summary>
@@ -703,6 +743,102 @@ namespace ExcelTests
             }
 
             /// <summary>
+            /// The CellA2 item.
+            /// </summary>
+            [RepositoryItem("cd26613a-3be1-417a-9fea-e3fe6ae44b1d")]
+            public virtual Ranorex.Cell CellA2
+            {
+                get
+                {
+                    return _cella2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellA2 item info.
+            /// </summary>
+            [RepositoryItemInfo("cd26613a-3be1-417a-9fea-e3fe6ae44b1d")]
+            public virtual RepoItemInfo CellA2Info
+            {
+                get
+                {
+                    return _cella2Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellA3 item.
+            /// </summary>
+            [RepositoryItem("56bc67f5-4211-47b1-bbb1-8e243c01abf9")]
+            public virtual Ranorex.Cell CellA3
+            {
+                get
+                {
+                    return _cella3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellA3 item info.
+            /// </summary>
+            [RepositoryItemInfo("56bc67f5-4211-47b1-bbb1-8e243c01abf9")]
+            public virtual RepoItemInfo CellA3Info
+            {
+                get
+                {
+                    return _cella3Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellA4 item.
+            /// </summary>
+            [RepositoryItem("386e23f4-4f4f-4702-932d-fd4408890bd6")]
+            public virtual Ranorex.Cell CellA4
+            {
+                get
+                {
+                    return _cella4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellA4 item info.
+            /// </summary>
+            [RepositoryItemInfo("386e23f4-4f4f-4702-932d-fd4408890bd6")]
+            public virtual RepoItemInfo CellA4Info
+            {
+                get
+                {
+                    return _cella4Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellA5 item.
+            /// </summary>
+            [RepositoryItem("3aab0c93-9f63-4b21-a486-66a013a7f672")]
+            public virtual Ranorex.Cell CellA5
+            {
+                get
+                {
+                    return _cella5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellA5 item info.
+            /// </summary>
+            [RepositoryItemInfo("3aab0c93-9f63-4b21-a486-66a013a7f672")]
+            public virtual RepoItemInfo CellA5Info
+            {
+                get
+                {
+                    return _cella5Info;
+                }
+            }
+
+            /// <summary>
             /// The CellA6 item.
             /// </summary>
             [RepositoryItem("b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26")]
@@ -723,6 +859,126 @@ namespace ExcelTests
                 get
                 {
                     return _cella6Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellB1 item.
+            /// </summary>
+            [RepositoryItem("314ab0fc-54af-4679-9664-f07a1472b658")]
+            public virtual Ranorex.Cell CellB1
+            {
+                get
+                {
+                    return _cellb1Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellB1 item info.
+            /// </summary>
+            [RepositoryItemInfo("314ab0fc-54af-4679-9664-f07a1472b658")]
+            public virtual RepoItemInfo CellB1Info
+            {
+                get
+                {
+                    return _cellb1Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellB2 item.
+            /// </summary>
+            [RepositoryItem("71ac5acf-546a-43b3-aa63-ce74609d5f4d")]
+            public virtual Ranorex.Cell CellB2
+            {
+                get
+                {
+                    return _cellb2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellB2 item info.
+            /// </summary>
+            [RepositoryItemInfo("71ac5acf-546a-43b3-aa63-ce74609d5f4d")]
+            public virtual RepoItemInfo CellB2Info
+            {
+                get
+                {
+                    return _cellb2Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellB3 item.
+            /// </summary>
+            [RepositoryItem("864cb453-902f-40e4-a111-dae9c6314239")]
+            public virtual Ranorex.Cell CellB3
+            {
+                get
+                {
+                    return _cellb3Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellB3 item info.
+            /// </summary>
+            [RepositoryItemInfo("864cb453-902f-40e4-a111-dae9c6314239")]
+            public virtual RepoItemInfo CellB3Info
+            {
+                get
+                {
+                    return _cellb3Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellB4 item.
+            /// </summary>
+            [RepositoryItem("ac2907c8-67fc-4a80-8697-2234e1d54e25")]
+            public virtual Ranorex.Cell CellB4
+            {
+                get
+                {
+                    return _cellb4Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellB4 item info.
+            /// </summary>
+            [RepositoryItemInfo("ac2907c8-67fc-4a80-8697-2234e1d54e25")]
+            public virtual RepoItemInfo CellB4Info
+            {
+                get
+                {
+                    return _cellb4Info;
+                }
+            }
+
+            /// <summary>
+            /// The CellB5 item.
+            /// </summary>
+            [RepositoryItem("53310de0-1088-4f17-9c24-c7badc057084")]
+            public virtual Ranorex.Cell CellB5
+            {
+                get
+                {
+                    return _cellb5Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The CellB5 item info.
+            /// </summary>
+            [RepositoryItemInfo("53310de0-1088-4f17-9c24-c7badc057084")]
+            public virtual RepoItemInfo CellB5Info
+            {
+                get
+                {
+                    return _cellb5Info;
                 }
             }
 
@@ -843,6 +1099,270 @@ namespace ExcelTests
                 get
                 {
                     return _msotcidplaceopenInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Grid1 item.
+            /// </summary>
+            [RepositoryItem("23420a7e-daaa-46b5-b11a-9a3fca7bacdd")]
+            public virtual Ranorex.Table Grid1
+            {
+                get
+                {
+                    return _grid1Info.CreateAdapter<Ranorex.Table>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Grid1 item info.
+            /// </summary>
+            [RepositoryItemInfo("23420a7e-daaa-46b5-b11a-9a3fca7bacdd")]
+            public virtual RepoItemInfo Grid1Info
+            {
+                get
+                {
+                    return _grid1Info;
+                }
+            }
+
+            /// <summary>
+            /// The Cell2 item.
+            /// </summary>
+            [RepositoryItem("0643cb64-a87a-4e8b-870a-3faca5669fe6")]
+            public virtual Ranorex.Cell Cell2
+            {
+                get
+                {
+                    return _cell2Info.CreateAdapter<Ranorex.Cell>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Cell2 item info.
+            /// </summary>
+            [RepositoryItemInfo("0643cb64-a87a-4e8b-870a-3faca5669fe6")]
+            public virtual RepoItemInfo Cell2Info
+            {
+                get
+                {
+                    return _cell2Info;
+                }
+            }
+
+            /// <summary>
+            /// The SaveAs2 item.
+            /// </summary>
+            [RepositoryItem("9f90adb5-e233-4e40-b057-c1c90d198eb5")]
+            public virtual Ranorex.TitleBar SaveAs2
+            {
+                get
+                {
+                    return _saveas2Info.CreateAdapter<Ranorex.TitleBar>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveAs2 item info.
+            /// </summary>
+            [RepositoryItemInfo("9f90adb5-e233-4e40-b057-c1c90d198eb5")]
+            public virtual RepoItemInfo SaveAs2Info
+            {
+                get
+                {
+                    return _saveas2Info;
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item.
+            /// </summary>
+            [RepositoryItem("881acc1c-c1d3-4a20-913e-bb515bd9d51a")]
+            public virtual Ranorex.Button ButtonOK
+            {
+                get
+                {
+                    return _buttonokInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ButtonOK item info.
+            /// </summary>
+            [RepositoryItemInfo("881acc1c-c1d3-4a20-913e-bb515bd9d51a")]
+            public virtual RepoItemInfo ButtonOKInfo
+            {
+                get
+                {
+                    return _buttonokInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Text65535 item.
+            /// </summary>
+            [RepositoryItem("7b5739e7-2235-43c0-ae00-aeedcbbc5b26")]
+            public virtual Ranorex.Text Text65535
+            {
+                get
+                {
+                    return _text65535Info.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Text65535 item info.
+            /// </summary>
+            [RepositoryItemInfo("7b5739e7-2235-43c0-ae00-aeedcbbc5b26")]
+            public virtual RepoItemInfo Text65535Info
+            {
+                get
+                {
+                    return _text65535Info;
+                }
+            }
+
+            /// <summary>
+            /// The SavePath item.
+            /// </summary>
+            [RepositoryItem("9853991e-010a-4b64-b389-7a1fd86d6c02")]
+            public virtual Ranorex.Text SavePath
+            {
+                get
+                {
+                    return _savepathInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SavePath item info.
+            /// </summary>
+            [RepositoryItemInfo("9853991e-010a-4b64-b389-7a1fd86d6c02")]
+            public virtual RepoItemInfo SavePathInfo
+            {
+                get
+                {
+                    return _savepathInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ChooseALocation item.
+            /// </summary>
+            [RepositoryItem("021ad083-a795-4987-bb6a-86dac5130ecc")]
+            public virtual Ranorex.ComboBox ChooseALocation
+            {
+                get
+                {
+                    return _choosealocationInfo.CreateAdapter<Ranorex.ComboBox>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ChooseALocation item info.
+            /// </summary>
+            [RepositoryItemInfo("021ad083-a795-4987-bb6a-86dac5130ecc")]
+            public virtual RepoItemInfo ChooseALocationInfo
+            {
+                get
+                {
+                    return _choosealocationInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FileName item.
+            /// </summary>
+            [RepositoryItem("e4e04189-491d-40c7-8c05-cca8fc810c75")]
+            public virtual Ranorex.Text FileName
+            {
+                get
+                {
+                    return _filenameInfo.CreateAdapter<Ranorex.Text>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FileName item info.
+            /// </summary>
+            [RepositoryItemInfo("e4e04189-491d-40c7-8c05-cca8fc810c75")]
+            public virtual RepoItemInfo FileNameInfo
+            {
+                get
+                {
+                    return _filenameInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save3 item.
+            /// </summary>
+            [RepositoryItem("1fba87be-1fff-4fa3-bbed-d4a1f01c683b")]
+            public virtual Ranorex.Button Save3
+            {
+                get
+                {
+                    return _save3Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save3 item info.
+            /// </summary>
+            [RepositoryItemInfo("1fba87be-1fff-4fa3-bbed-d4a1f01c683b")]
+            public virtual RepoItemInfo Save3Info
+            {
+                get
+                {
+                    return _save3Info;
+                }
+            }
+
+            /// <summary>
+            /// The SaveDialog item.
+            /// </summary>
+            [RepositoryItem("5d4b8e31-7635-4d8e-9053-8346c7e93d8a")]
+            public virtual Ranorex.Form SaveDialog
+            {
+                get
+                {
+                    return _savedialogInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveDialog item info.
+            /// </summary>
+            [RepositoryItemInfo("5d4b8e31-7635-4d8e-9053-8346c7e93d8a")]
+            public virtual RepoItemInfo SaveDialogInfo
+            {
+                get
+                {
+                    return _savedialogInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Save1 item.
+            /// </summary>
+            [RepositoryItem("5e5a538c-b408-4a9c-9f85-368fa392cea9")]
+            public virtual Ranorex.Button Save1
+            {
+                get
+                {
+                    return _save1Info.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Save1 item info.
+            /// </summary>
+            [RepositoryItemInfo("5e5a538c-b408-4a9c-9f85-368fa392cea9")]
+            public virtual RepoItemInfo Save1Info
+            {
+                get
+                {
+                    return _save1Info;
                 }
             }
         }

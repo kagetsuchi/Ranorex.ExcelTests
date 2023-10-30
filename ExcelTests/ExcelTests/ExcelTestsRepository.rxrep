@@ -18,10 +18,10 @@ name="ExcelTestsRepository">
 		id="e22d9a7c-9790-46a6-aa66-eae57fc6476e"
 		isrooted="True"
 		name="Book1Excel"
-		refimgid="914102f8-71f3-4c92-b8e0-465cbe2b4080"
+		refimgid="042f79d4-33fe-4623-89e2-0041d4bb7931"
 		refpath="/form[@processname='EXCEL']"
 		searchtimeout="30000ms"
-		usecache="True">
+		usecache="False">
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke"
 			capname="button"
@@ -241,6 +241,46 @@ name="ExcelTestsRepository">
 			<item
 			addcaps="cell,excelrange"
 			capname="cell"
+			id="cd26613a-3be1-417a-9fea-e3fe6ae44b1d"
+			name="CellA2"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='2']/cell[@address='A2']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="56bc67f5-4211-47b1-bbb1-8e243c01abf9"
+			name="CellA3"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='3']/cell[@address='A3']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="386e23f4-4f4f-4702-932d-fd4408890bd6"
+			name="CellA4"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='4']/cell[@address='A4']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="3aab0c93-9f63-4b21-a486-66a013a7f672"
+			name="CellA5"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='5']/cell[@address='A5']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
 			id="b1b5ecb5-cdeb-4df8-b05e-9fa012ef3a26"
 			name="CellA6"
 			refimgid="a96c9187-e5dc-4136-b098-73956c476da4"
@@ -248,6 +288,56 @@ name="ExcelTestsRepository">
 			robustPath="/form[@processname='EXCEL']//cell[@address='A6']"
 			searchtimeout="30000ms">
 				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='6']/cell[@address='A6']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="314ab0fc-54af-4679-9664-f07a1472b658"
+			name="CellB1"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='1']/cell[@address='B1']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="71ac5acf-546a-43b3-aa63-ce74609d5f4d"
+			name="CellB2"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='2']/cell[@address='B2']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="864cb453-902f-40e4-a111-dae9c6314239"
+			name="CellB3"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='3']/cell[@address='B3']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="ac2907c8-67fc-4a80-8697-2234e1d54e25"
+			name="CellB4"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='4']/cell[@address='B4']
+			</item>
+			<item
+			addcaps="cell,excelrange"
+			capname="cell"
+			id="53310de0-1088-4f17-9c24-c7badc057084"
+			name="CellB5"
+			refimgid="e8408c56-bb1a-4d39-b35b-3cdf30a088b9"
+			robustPath="/form[@processname='EXCEL']//cell[@address='A1']"
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@name='Sheet1']/row[@index='5']/cell[@address='B5']
 			</item>
 			<item
 			addcaps="button,uiautomation,uiautomationinvoke"
@@ -266,10 +356,9 @@ name="ExcelTestsRepository">
 			id="7dc0fe92-f0a2-4cee-8aa8-0e8d48a8961c"
 			name="Save"
 			refimgid="eb69c469-027a-4e79-9d49-d8963d8b94ab"
-			refpath="/form[@title='Microsoft Excel']/container[@class='NetUIHWND']/form[@name='Microsoft Excel']/button[@name='Save']"
-			robustPath="/form[@processname='EXCEL']//button[@name='Save']"
+			robustPath=""
 			searchtimeout="30000ms">
-				/form[@processname='EXCEL']/?/?/form[@name='Microsoft Excel']/button[@name='Save']
+				/form[@processname='EXCEL']/*/*/form[@name='Microsoft Excel']/button[@name='Save']
 			</item>
 			<item
 			addcaps="table,excelworksheet"
@@ -302,6 +391,123 @@ name="ExcelTestsRepository">
 			robustPath=""
 			searchtimeout="30000ms">
 				/form[@processname='EXCEL']//container[@automationid='OutSpaceNavBar']/list[@automationid='NavBarMenu']/listitem[@automationid='msotcidPlaceOpen']
+			</item>
+			<item
+			addcaps="cell,uiautomation"
+			capname="table"
+			id="23420a7e-daaa-46b5-b11a-9a3fca7bacdd"
+			name="Grid1"
+			refimgid="18bc6cef-f50e-449d-8f9d-2e5d57279692"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//table[@automationid='Grid']
+			</item>
+			<item
+			addcaps="cell,uiautomation"
+			capname="cell"
+			id="0643cb64-a87a-4e8b-870a-3faca5669fe6"
+			name="Cell2"
+			refimgid="8078e449-7615-4885-822e-a05a1bb99ce0"
+			refpath="/form[@processname='EXCEL']/element[@class='XLDESK']/workbook[@name='Book1']/container[@automationid='Book1']/container[@automationid='Sheet1']/table[@automationid='Grid']/cell[@name='2']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']//container[@automationid='Book1']/?/?/table[@automationid='Grid']/cell[@name='2']
+			</item>
+			<item
+			addcaps="titlebar,accessible"
+			capname="titlebar"
+			id="9f90adb5-e233-4e40-b057-c1c90d198eb5"
+			name="SaveAs2"
+			refimgid="9f4ccfe0-e093-48c6-b2c9-d29702cdfae5"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/titlebar[@accessiblerole='TitleBar']
+			</item>
+			<item
+			addcaps="button,nativewindow"
+			capname="button"
+			id="881acc1c-c1d3-4a20-913e-bb515bd9d51a"
+			name="ButtonOK"
+			refimgid="91627f17-f154-49d1-80e3-77cae026bca9"
+			refpath="/form[@title='Save As']/button[@text='OK']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/button[@text='OK']
+			</item>
+			<item
+			addcaps="text,nativewindow"
+			capname="text"
+			id="7b5739e7-2235-43c0-ae00-aeedcbbc5b26"
+			name="Text65535"
+			refimgid="a3ac25d0-2130-481d-8baf-43ad2453f741"
+			refpath="/form[@title='Save As']/text[@controlid='65535']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/text[@controlid='65535']
+			</item>
+			<item
+			addcaps="text,uiautomation"
+			capname="text"
+			id="9853991e-010a-4b64-b389-7a1fd86d6c02"
+			name="SavePath"
+			refimgid="25f1d138-8651-48f4-b257-eb1d3784ba04"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/*/combobox[@name='Choose a Location']/text[0]
+			</item>
+			<item
+			addcaps="combobox,uiautomation"
+			capname="combobox"
+			id="021ad083-a795-4987-bb6a-86dac5130ecc"
+			name="ChooseALocation"
+			refimgid="51358043-ab51-49c2-8d29-a2a8d1d25f40"
+			refpath="/form[@title='']/container[@class='NetUIHWND']/form[@name='Save this file']/container[@classname='NetUIScrollViewer']/combobox[@name='Choose a Location']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/?/?/form[@name='Save this file']/?/?/combobox[@name='Choose a Location']
+			</item>
+			<item
+			addcaps="text,accessible"
+			capname="text"
+			id="e4e04189-491d-40c7-8c05-cca8fc810c75"
+			name="FileName"
+			refimgid="190aa6d4-e662-443b-bb6c-55b3c74724a5"
+			refpath="/form[@title='']/container[@class='NetUIHWND']/element[@class='NetUICtrlNotifySink']/element[@controlid='1']/text[@accessiblename='File name']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/container[@class='NetUIHWND']//text[@accessiblerole='Text']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="1fba87be-1fff-4fa3-bbed-d4a1f01c683b"
+			name="Save3"
+			refimgid="bbec4a3c-18d0-4990-8d87-ee8c64267912"
+			refpath="/form[@title='Microsoft Excel']/container[@class='NetUIHWND']/form[@name='Microsoft Excel']/button[@name='Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/container[@class='NetUIHWND']/form[@name='Microsoft Excel']/button[@name='Save']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="form"
+			id="5d4b8e31-7635-4d8e-9053-8346c7e93d8a"
+			name="SaveDialog"
+			refimgid="bbec4a3c-18d0-4990-8d87-ee8c64267912"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/container[@class='NetUIHWND']/form[@name='Microsoft Excel']
+			</item>
+			<item
+			addcaps="button,uiautomation,uiautomationinvoke"
+			capname="button"
+			id="5e5a538c-b408-4a9c-9f85-368fa392cea9"
+			name="Save1"
+			refimgid="561c47e2-56f8-40c6-9d77-1096ca70bbc7"
+			refpath="/form[@title='']/container[@class='NetUIHWND']/form[@name='Save this file']/container[@classname='NetUIScrollViewer']/button[@name='Save']"
+			robustPath=""
+			searchtimeout="30000ms">
+				/form[@processname='EXCEL']/container[@class='NetUIHWND']/form[@name='Save this file']/container[@classname='NetUIScrollViewer']/button[@name='Save']
 			</item>
 			<basepath>
 				/form[@processname='EXCEL']
