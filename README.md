@@ -76,4 +76,4 @@ Sample Automation Tests using Microsoft Excel
 ## Dev Notes
 - _I double checked all the elements used on this solution to make sure no content id was used as it is not recommended for testing on a different device._
 - _Still figuring out how to pass a default path on open dialog box when saving an excel file_
-- _Elements under reposotories are not organized. Other Elements that are not deleted. Forgive me in advanced._
+- _Elements under reposotories are not organized. Other Elements that are not deleted. Forgive me in advance._
