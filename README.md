@@ -55,10 +55,12 @@ Sample Automation Tests using Microsoft Excel
 ```
 
 **5. Insert/Delete/Copy Cells, Rows and Columns (Recording Module + Code Module)**
-    - Uses recording modules to create and save excel file including adding data manually (values to add are configured on Test Case's parameters)
-    - For insert/delete/copy, a code module is being used and manipulates the running excel application via Ranorex SDK
-    - Check the Test Case **"Cells_InsertDeleteCopy"** and Run the test individually.
-    - View test details on report generated
+```
+- Uses recording modules to create and save excel file including adding data manually (values to add are configured on Test Case's parameters)
+- For insert/delete/copy, a code module is being used and manipulates the running excel application via Ranorex SDK
+- Check the Test Case **"Cells_InsertDeleteCopy"** and Run the test individually.
+- View test details on report generated
+```
     
 **6. Save Workbook ensuring Prompt Message (Recording Module + user-code)**
      - Re-used recording modules on test cases to create / save and add values on excel file
