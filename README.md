@@ -51,7 +51,7 @@ Sample Automation Tests using Microsoft Excel
   - Change cell with an invalid value and validate the expected result
 
 - Smart folder to validate the captured cell value
-- Parameters in the test can be configured on Test Case and grouped modules depending on their individual usage
+- Parameters for Test Case and Modules are separated depending on their usage
 - Check the Test Case "AddFormulaCheckCalculation" and Run the test individually.
 - View test details on report generated
 ```
