@@ -75,5 +75,5 @@ Sample Automation Tests using Microsoft Excel
 ```
 
 ## Dev Notes
-_- I double checked all the elements used on this solution to make sure no content id was used as it is not recommended for testing on a different device.
-- If finding the element still takes too long please recommend any workarounds other than modifying the xPath_
+- _I double checked all the elements used on this solution to make sure no content id was used as it is not recommended for testing on a different device._
+- _If finding the element still takes too long please recommend any workarounds other than modifying the xPath_
