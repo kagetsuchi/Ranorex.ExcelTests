@@ -9,13 +9,12 @@ Sample Automation Tests using Microsoft Excel
 - Insert/Delete/Copy Cells, Rows and Columns
 - Save Workbook ensuring Prompt Message
 
-## Requirements/Notes
+## Requirements/Configuration
 - Excel Version Office 365 (2019). (There's a high possible chance that these test cases will not work on Office 2019 only)
 - Ranorex Solution is only configured for single instance
 - Use Cache was turned off on repository
-- Make sure other test cases are unchecked and run a single test case only
+- All test cases are unchecked please run a single test case only for each functions
 
-  
 ## How to Test each Test Cases:
 
 **1. Launch Excel (Recording Module)**
