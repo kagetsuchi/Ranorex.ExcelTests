@@ -45,14 +45,13 @@ Sample Automation Tests using Microsoft Excel
 ```
 - Creates Excel File with values and formula via User Code
 - 3 grouped modules that do the following tests:
-      
-   3.1 Change cell with a valid value and validate expected result
-   3.2 Change with new formula and validate the expected result
-   3.3 Change cell with an invalid value and validate the expected result
+  - Change cell with a valid value and validate expected result
+  - Change with new formula and validate the expected result
+  - Change cell with an invalid value and validate the expected result
 - Smart folder to validate the captured cell value
--  Parameters in the test can be configured on Test Case and grouped modules depending on their individual usage
--  Check the Test Case **"AddFormulaCheckCalculation"** and Run the test individually.
--  View test details on report generated
+- Parameters in the test can be configured on Test Case and grouped modules depending on their individual usage
+- Check the Test Case **"AddFormulaCheckCalculation"** and Run the test individually.
+- View test details on report generated
 ```
 
 **5. Insert/Delete/Copy Cells, Rows and Columns (Recording Module + Code Module)**
